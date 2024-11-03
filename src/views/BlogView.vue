@@ -1,0 +1,1 @@
+<template>Blog View</template>
