@@ -17,5 +17,6 @@ defineProps(['href', 'body'])
   width: fit-content;
   display: flex;
   align-items: end;
+  text-decoration: none;
 }
 </style>
