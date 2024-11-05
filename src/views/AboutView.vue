@@ -278,6 +278,7 @@ import aboutProfile6 from '../../public/about-profile-6.png'
       </div>
     </div>
   </div>
+  <!-- end -->
 </template>
 <style scoped>
 a {
