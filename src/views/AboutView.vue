@@ -15,6 +15,7 @@ import aboutProfile3 from '../../public/about-profile-3.png'
 import aboutProfile4 from '../../public/about-profile-4.png'
 import aboutProfile5 from '../../public/about-profile-5.png'
 import aboutProfile6 from '../../public/about-profile-6.png'
+import GetInvolved from '@/components/GetInvolved.vue'
 </script>
 <template>
   <div class="container">
@@ -214,7 +215,7 @@ import aboutProfile6 from '../../public/about-profile-6.png'
             <img :src="aboutProfile6" alt="img" />
             <div>
               <p class="cardName">Dr. John Chukwuma</p>
-              <p class="cardPosition}">Director of Health Programs</p>
+              <p class="cardPosition">Director of Health Programs</p>
             </div>
           </div>
           <div class="text">
@@ -232,17 +233,17 @@ import aboutProfile6 from '../../public/about-profile-6.png'
       </div>
     </div>
   </div>
-  <div class="container}">
-    <div class="heading}">
-      <p class="topHead}">THE SPARK OF CHANGE: OUR IMPACT</p>
-      <p class="aboutTeam}">
+  <div class="our-impact-container">
+    <div class="our-impact-header">
+      <p class="impact-header">THE SPARK OF CHANGE: OUR IMPACT</p>
+      <p class="about-team">
         Since our inception, Lumina Spark Foundation has made a significant
         impact on the lives of thousands of individuals across Africa. Here are
         some highlights of our achievements:
       </p>
     </div>
-    <div class="metricCard}">
-      <div class="card1}">
+    <div class="metric-card">
+      <div class="card1">
         <h1>50,000+</h1>
         <div>
           <h4>Lives Touched</h4>
@@ -252,7 +253,7 @@ import aboutProfile6 from '../../public/about-profile-6.png'
           </p>
         </div>
       </div>
-      <div class="card2}">
+      <div class="card2">
         <h1>&gt;$5million</h1>
         <div>
           <h4>Donation Raised</h4>
@@ -263,7 +264,7 @@ import aboutProfile6 from '../../public/about-profile-6.png'
           </p>
         </div>
       </div>
-      <div class="card3}">
+      <div class="card3">
         <h1>10,000</h1>
         <div>
           <h4>Women Empowered</h4>
@@ -278,7 +279,7 @@ import aboutProfile6 from '../../public/about-profile-6.png'
       </div>
     </div>
   </div>
-  <!-- end -->
+  <GetInvolved />
 </template>
 <style scoped>
 a {
@@ -508,5 +509,79 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.our-impact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 50px 100px;
+  background-color: #fffbf8;
+}
+.impact-header {
+  color: #df3800;
+  letter-spacing: 0.15%;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.impact-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.about-team {
+  width: 714px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+}
+.metric-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: flex-end;
+}
+.card1,
+.card2,
+.card3 {
+  border-radius: 24px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+}
+.card1 {
+  background-color: #ffd4ba;
+  height: 208px;
+  width: 258px;
+  color: #390e00;
+}
+.card2 {
+  background-color: #df3800;
+  height: 379px;
+  width: 349px;
+  color: white;
+}
+.card3 {
+  background-color: #b66100;
+  height: 289px;
+  color: white;
+  width: 441px;
+}
+.card1 > h1,
+.card2 > h1,
+.card3 > h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.card1 > div > p,
+.card2 > div > p,
+.card3 > div > p {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5%;
+  line-height: 16px;
 }
 </style>
