@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue'
 import aboutHeroImg from '../../public/HeroLandscapeImageContainer.png'
 import imgOverlay from '../../public/img-overlay.png'
 import TheButton from '@/components/TheButton.vue'
@@ -16,6 +17,36 @@ import aboutProfile4 from '../../public/about-profile-4.png'
 import aboutProfile5 from '../../public/about-profile-5.png'
 import aboutProfile6 from '../../public/about-profile-6.png'
 import GetInvolved from '@/components/GetInvolved.vue'
+import TheFaq from '@/components/TheFaq.vue'
+const data = [
+  {
+    id: 1,
+    isOpen: false,
+    title: 'Where are these chairs assembled?',
+    text: 'We believe in treating all individuals with dignity and respect.',
+  },
+  {
+    id: 2,
+    isOpen: false,
+    title: 'How long do I have to return my chair?',
+    text: 'We believe in treating all individuals with dignity and respect.',
+  },
+  {
+    id: 3,
+    isOpen: false,
+    title: 'Do you ship to countries outside the EU?',
+    text: 'We believe in treating all individuals with dignity and respect.',
+  },
+]
+const faqs = ref(data)
+const toggleAnswer = id => {
+  faqs.value = faqs.value.map(faq =>
+    faq.isOpen && faq.id !== id ? { ...faq, isOpen: false } : faq,
+  )
+  faqs.value = faqs.value.map(faq =>
+    faq.id === id ? { ...faq, isOpen: !faq.isOpen } : faq,
+  )
+}
 </script>
 <template>
   <div class="container">
@@ -72,6 +103,31 @@ import GetInvolved from '@/components/GetInvolved.vue'
     </div>
   </div>
   <!-- ACCORDION -->
+  <div class="accordion-container">
+    <div class="acc-left-text">
+      <h2>
+        Lumina Spark Foundation was established with a vision to address
+        Africa’s most pressing challenges from within.
+      </h2>
+      <p>
+        Inspired by the resilience and potential of African communities, we set
+        out to provide vital support, resources, and opportunities to the
+        continent’s most vulnerable populations.
+      </p>
+    </div>
+    <div class="acc-right-sec">
+      <p>
+        At Lumina Spark Foundation, we are guided by a core set of values that
+        define our approach:
+      </p>
+      <TheFaq
+        v-for="faq in faqs"
+        :key="faq.id"
+        :faq="faq"
+        @toggle-answer="toggleAnswer"
+      />
+    </div>
+  </div>
 
   <div class="founder-speech">
     <div class="left-sec">
@@ -174,7 +230,7 @@ import GetInvolved from '@/components/GetInvolved.vue'
           <div class="profile-card">
             <img :src="aboutProfile4" alt="img" />
             <div>
-              <p class="card-name"></p>
+              <p class="card-name">Dr. John Chukwuma</p>
               <p class="card-position">Director of Health Programs</p>
             </div>
           </div>
@@ -214,8 +270,8 @@ import GetInvolved from '@/components/GetInvolved.vue'
           <div class="profile-card">
             <img :src="aboutProfile6" alt="img" />
             <div>
-              <p class="cardName">Dr. John Chukwuma</p>
-              <p class="cardPosition">Director of Health Programs</p>
+              <p class="card-name">Dr. John Chukwuma</p>
+              <p class="card-position">Director of Health Programs</p>
             </div>
           </div>
           <div class="text">
@@ -282,6 +338,10 @@ import GetInvolved from '@/components/GetInvolved.vue'
   <GetInvolved />
 </template>
 <style scoped>
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -392,6 +452,40 @@ a {
 .vision > p {
   font-size: 22px;
   line-height: 28px;
+}
+.accordion-container {
+  padding: 0 100px 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fffbf8;
+}
+.acc-left-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 441px;
+}
+.acc-left-text h2 {
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.acc-left-text p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.acc-right-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 457px;
+}
+.acc-right-sec > p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
 }
 .founder-speech {
   padding: 50px 100px;
