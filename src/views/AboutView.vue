@@ -39,10 +39,11 @@ const data = [
   },
 ]
 const faqs = ref(data)
-const toggleAnswer = id => {
+function toggleAnswer(id) {
   faqs.value = faqs.value.map(faq =>
     faq.isOpen && faq.id !== id ? { ...faq, isOpen: false } : faq,
   )
+  console.log(id)
   faqs.value = faqs.value.map(faq =>
     faq.id === id ? { ...faq, isOpen: !faq.isOpen } : faq,
   )
