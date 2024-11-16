@@ -1,5 +1,5 @@
 <script setup>
-// import imgOne from '/img-first.png'
+import imgOne from '/img-first.png'
 import imgSec from '/img-second.png'
 import imgThird from '/img-third.png'
 import sustain from '/sustain.png'
@@ -64,8 +64,8 @@ import InputGroup from '@/components/InputGroup.vue'
       </div>
     </div>
     <div class="hero-images">
-      <img src="/img1.png" alt="File icon" />
-      <!-- <img :src="imgOne" alt="File icon" /> -->
+      <!-- <img src="/img1.png" alt="File icon" /> -->
+      <img :src="imgOne" alt="File icon" />
       <img :src="imgSec" alt="File icon" />
       <img :src="imgThird" alt="File icon" />
     </div>
