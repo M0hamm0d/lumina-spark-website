@@ -2,12 +2,6 @@
 import imgOne from '/img-first.png'
 import imgSec from '/img-second.png'
 import imgThird from '/img-third.png'
-import sustain from '/sustain.png'
-import shelter from '/shelter.png'
-import trained from '/trained.png'
-import volunteer from '/volunteer.png'
-import funding from '/funding.png'
-import partners from '/partners.png'
 import pause from '/pause.png'
 import aboutUs from '/about-us.png'
 import ourTeam from '/our-team.png'
@@ -15,10 +9,6 @@ import AfricanLead from '/african-lead.png'
 import community from '/community.png'
 import sustainability from '/sustainability.png'
 import empowerment from '/empowerment.png'
-import amplifying from '/amplifying-edu.png'
-import empower from '/empowering-women.png'
-import bridge from '/bridge.png'
-import fulfil from '/fulfil.png'
 import healthCare from '/health-care.png'
 import learningEarly from '/learningEarly.png'
 import shelters from '/shelter&home.png'
@@ -37,6 +27,9 @@ import safeHaven from '/safe-haven.png'
 import img3 from '/img3.png'
 import empWomen from '/empWomen.png'
 import InputGroup from '@/components/InputGroup.vue'
+import SocialImpact from '@/components/SocialImpact.vue'
+import OurCommitment from '@/components/OurCommitment.vue'
+import TheHeaders from '@/components/TheHeaders.vue'
 </script>
 
 <template>
@@ -70,49 +63,7 @@ import InputGroup from '@/components/InputGroup.vue'
       <img :src="imgThird" alt="File icon" />
     </div>
   </div>
-  <div class="social-impact-wrapper">
-    <div class="social-impact">
-      <div class="si-metric-card">
-        <img :src="funding" alt="File icon" />
-        <div>
-          <h1>$5M</h1>
-          <p>Funding Raised</p>
-        </div>
-      </div>
-      <div class="si-metric-card">
-        <img :src="volunteer" alt="File icon" />
-        <div>
-          <h1>1000+</h1>
-          <p>Volunteers Engaged</p>
-        </div>
-      </div>
-      <div class="si-metric-card">
-        <img :src="trained" alt="File icon" />
-        <div>
-          <h1>20,000</h1>
-          <p>Youth Trained</p>
-        </div>
-      </div>
-      <div class="si-metric-card">
-        <img :src="shelter" alt="File icon" />
-        <div>
-          <h1>5000</h1>
-          <p>Safe Shelter Provider</p>
-        </div>
-      </div>
-      <div class="si-metric-card">
-        <img :src="sustain" alt="File icon" />
-        <div>
-          <h1>50+</h1>
-          <p>Sustainable Project</p>
-        </div>
-      </div>
-    </div>
-    <div class="partners-section">
-      <h3>OUR PARTNERS FROM ALL OVER THE WORLD</h3>
-      <img :src="partners" alt="File icon" />
-    </div>
-  </div>
+  <SocialImpact />
   <div class="about-us-section">
     <div class="about-us-desc">
       <div class="desc-top">
@@ -160,61 +111,17 @@ import InputGroup from '@/components/InputGroup.vue'
       </div>
     </div>
   </div>
-  <div class="commitment-section">
-    <h3>We are committed to:</h3>
-    <div class="card-container">
-      <div class="card">
-        <img :src="amplifying" alt="File icon" />
-        <div>
-          <h3>Amplifying Education</h3>
-          <p>
-            We ensure access to quality education, the foundation for a better
-            life.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img :src="bridge" alt="File icon" />
-        <div>
-          <h3>Bridging the Digital Divide:</h3>
-          <p>
-            We equip individuals with digital literacy, opening doors to
-            opportunity.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img :src="empower" alt="File icon" />
-        <div>
-          <h3>Empowering Women:</h3>
-          <p>
-            We provide women with the skills and resources to achieve economic
-            security.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img :src="fulfil" alt="File icon" />
-        <div>
-          <h3>Fulfilling Basic Needs:</h3>
-          <p>
-            We offer vital support, including healthcare, shelter, and food
-            security.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <OurCommitment />
   <div id="our-initiatives" class="our-initiative">
-    <div class="initiative-header">
-      <h3>OUR INITIATIVE</h3>
-      <p>
-        Lumina Spark Foundation tackles Africa&lsquo;s most pressing challenges
+    <TheHeaders>
+      <template v-slot:header>OUR INITIATIVE</template>
+      <template v-slot:text-body
+        >Lumina Spark Foundation tackles Africa&lsquo;s most pressing challenges
         through a comprehensive approach that addresses the well-being of
         individuals and promotes sustainable growth within communities. Here are
-        our core focus areas:
-      </p>
-    </div>
+        our core focus areas:</template
+      >
+    </TheHeaders>
     <div class="initiative-cards">
       <div class="initiative-card">
         <img :src="healthCare" alt="File icon" />
@@ -299,18 +206,18 @@ import InputGroup from '@/components/InputGroup.vue'
     </div>
   </div>
   <div id="ongoing-fundraising" class="ongoing-camp-container">
-    <div class="ongoing-camp-top">
-      <h3>ONGOING FUNDRAISING CAMPAIGNS</h3>
-      <div>
-        <h3>Make a Difference Today: Support Our Critical Initiatives</h3>
-        <p>
-          Lumina Spark Foundation relies on your generosity to continue
-          empowering Africa&lsquo;s youth, women, and children. Here are some of
-          our ongoing fundraising campaigns that directly address critical needs
-          across the continent:
-        </p>
-      </div>
-    </div>
+    <TheHeaders classes="font-size" width="719px">
+      <template v-slot:header>ONGOING FUNDRAISING CAMPAIGNS</template>
+      <template v-slot:optional-slot
+        >Make a Difference Today: Support Our Critical Initiatives</template
+      >
+      <template v-slot:text-body
+        >Lumina Spark Foundation relies on your generosity to continue
+        empowering Africa&lsquo;s youth, women, and children. Here are some of
+        our ongoing fundraising campaigns that directly address critical needs
+        across the continent:</template
+      >
+    </TheHeaders>
     <div class="ongoing-fundraising-bottom">
       <div class="ongoing-fundraising-big-card}">
         <img :src="bigCardPortrait" alt="img" />
@@ -519,53 +426,6 @@ a {
   display: flex;
   gap: 16px;
 }
-.social-impact-wrapper {
-  padding: 50px 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-}
-.social-impact {
-  padding: 50px 24px;
-  border: 1px solid #ffd4ba;
-  border-radius: 24px;
-  display: flex;
-  justify-content: space-between;
-}
-.si-metric-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  width: 206px;
-}
-.si-metric-card:not(:last-child) {
-  border-right: 1.5px solid #ffd4ba;
-}
-.si-metric-card > div {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-.si-metric-card > div h1 {
-  text-align: center;
-}
-.partners-section {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.partners-section h3 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-}
-.partners-section img {
-  display: flex;
-  margin: 0 auto;
-}
 .about-us-section {
   padding: 50px 100px;
   gap: 16px;
@@ -627,7 +487,6 @@ a {
   flex-wrap: nowrap;
   background-color: #fffbf7;
 }
-
 .image-container {
   position: relative;
 }
@@ -637,64 +496,12 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.commitment-section {
-  background-color: #ffdbb5;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding: 50px 100px;
-}
-.container > h3 {
-  font-weight: 500;
-  line-height: 32px;
-  font-size: 24px;
-  text-align: center;
-}
-.card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.card {
-  padding: 32px 24px;
-  gap: 12px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #d0c4c0;
-  border-radius: 24px;
-  background-color: #f5f3f3;
-  color: #390e00;
-}
-.card > div {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.card > div h3 {
-  font-weight: 500;
-  line-height: 32px;
-  font-size: 24px;
-}
-.card img {
-  width: 88px;
-}
 .our-initiative {
   padding: 50px 100px;
   gap: 24px;
   display: flex;
   flex-direction: column;
   background-color: #fffbf8;
-}
-.initiative-header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 8px;
-}
-.initiative-header h3 {
-  font-weight: 700;
-  font-size: 16px;
-  color: #df3800;
 }
 .initiative-cards {
   display: grid;
@@ -735,28 +542,6 @@ a {
   flex-direction: column;
   gap: 32px;
   padding: 50px 100px;
-}
-.ongoing-camp-top {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.ongoing-camp-top > h3 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #df3800;
-}
-.ongoing-camp-top p {
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-}
-.ongoing-camp-top > div {
-  width: 719px;
-  margin: auto;
-  text-align: center;
 }
 .ongoing-fundraising-bottom {
   display: flex;
