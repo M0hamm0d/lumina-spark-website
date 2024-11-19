@@ -1,5 +1,5 @@
 <script setup>
-import partners from '/partners.png'
+import OurPartners from './OurPartners.vue'
 const metricCard = [
   {
     src: '../../public/sustain.png',
@@ -45,7 +45,7 @@ const metricCard = [
     </div>
     <div class="partners-section">
       <h3>OUR PARTNERS FROM ALL OVER THE WORLD</h3>
-      <img :src="partners" alt="File icon" />
+      <OurPartners />
     </div>
   </div>
 </template>
