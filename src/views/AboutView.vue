@@ -10,14 +10,10 @@ import missionLogo from '../../public/missionLogo.png'
 import quote from '../../public/quote.png'
 import founder from '../../public/founder.png'
 import teamGroup from '../../public/team-group-pics.png'
-import aboutProfile1 from '../../public/about-profile1.png'
-import aboutProfile2 from '../../public/about-profile-2.png'
-import aboutProfile3 from '../../public/about-profile-3.png'
-import aboutProfile4 from '../../public/about-profile-4.png'
-import aboutProfile5 from '../../public/about-profile-5.png'
-import aboutProfile6 from '../../public/about-profile-6.png'
 import GetInvolved from '@/components/GetInvolved.vue'
+import TheHeaders from '@/components/TheHeaders.vue'
 import TheFaq from '@/components/TheFaq.vue'
+import staffRoles from '@/components/staffRoles.vue'
 const data = [
   {
     id: 1,
@@ -150,155 +146,27 @@ function toggleAnswer(id) {
   </div>
   <div class="our-team-container">
     <div class="top-section">
-      <div class="heading">
-        <p class="top-head">MEET THE TEAM</p>
-        <p class="about-team">
-          We are driven by a dedicated team of professionals with extensive
+      <TheHeaders width="714px" font-weight-value="500">
+        <template v-slot:header>MEET THE TEAM</template>
+        <template v-slot:text-body
+          >We are driven by a dedicated team of professionals with extensive
           experience in humanitarian aid, community development, and social
-          impact.
-        </p>
-      </div>
+          impact.</template
+        >
+      </TheHeaders>
       <img :src="teamGroup" alt="img" />
     </div>
-    <div class="the-team-sec">
-      <div class="top-card">
-        <div class="card">
-          <div class="profile-card">
-            <img :src="aboutProfile1" alt="img" />
-            <div>
-              <p class="card-name">Dr. Grace Olatunde</p>
-              <p class="card-position">Chief Operating Officer</p>
-            </div>
-          </div>
-          <div class="text">
-            <p>
-              Dr. Grace Olatunde brings a wealth of experience in non-profit
-              management and operations. As COO, she oversees the day-to-day
-              operations of Lumina Spark Foundation, ensuring the effective
-              implementation of programs and initiatives.
-            </p>
-            <p>
-              Grace is committed to driving operational excellence and
-              maximizing the foundation’s impact across Africa.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="profile-card">
-            <img :src="aboutProfile2" alt="img" />
-            <div>
-              <p class="card-name">Dr. Grace Olatunde</p>
-              <p class="card-position">Chief Operating Officer</p>
-            </div>
-          </div>
-          <div class="text">
-            <p>
-              Dr. Grace Olatunde brings a wealth of experience in non-profit
-              management and operations. As COO, she oversees the day-to-day
-              operations of Lumina Spark Foundation, ensuring the effective
-              implementation of programs and initiatives.
-            </p>
-            <p>
-              Grace is committed to driving operational excellence and
-              maximizing the foundation’s impact across Africa.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="profile-card">
-            <img :src="aboutProfile3" alt="img" />
-            <div>
-              <p class="card-name">Dr. Grace Olatunde</p>
-              <p class="card-position">Chief Operating Officer</p>
-            </div>
-          </div>
-          <div class="text">
-            <p>
-              Dr. Grace Olatunde brings a wealth of experience in non-profit
-              management and operations. As COO, she oversees the day-to-day
-              operations of Lumina Spark Foundation, ensuring the effective
-              implementation of programs and initiatives.
-            </p>
-            <p>
-              Grace is committed to driving operational excellence and
-              maximizing the foundation’s impact across Africa.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="bottom-card">
-        <div class="card">
-          <div class="profile-card">
-            <img :src="aboutProfile4" alt="img" />
-            <div>
-              <p class="card-name">Dr. John Chukwuma</p>
-              <p class="card-position">Director of Health Programs</p>
-            </div>
-          </div>
-          <div class="text">
-            <p>
-              Dr. John Chukwuma is a medical doctor with extensive experience in
-              public health and healthcare delivery.
-            </p>
-            <p>
-              As the Director of Health Programs, he leads the foundation’s
-              medical outreach initiatives, providing essential healthcare
-              services to remote and underserved communities.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="profile-card">
-            <img :src="aboutProfile5" alt="img" />
-            <div>
-              <p class="card-name">Dr. John Chukwuma</p>
-              <p class="card-position">Director of Health Programs</p>
-            </div>
-          </div>
-          <div class="text">
-            <p>
-              Dr. John Chukwuma is a medical doctor with extensive experience in
-              public health and healthcare delivery.
-            </p>
-            <p>
-              As the Director of Health Programs, he leads the foundation’s
-              medical outreach initiatives, providing essential healthcare
-              services to remote and underserved communities.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="profile-card">
-            <img :src="aboutProfile6" alt="img" />
-            <div>
-              <p class="card-name">Dr. John Chukwuma</p>
-              <p class="card-position">Director of Health Programs</p>
-            </div>
-          </div>
-          <div class="text">
-            <p>
-              Dr. John Chukwuma is a medical doctor with extensive experience in
-              public health and healthcare delivery.
-            </p>
-            <p>
-              As the Director of Health Programs, he leads the foundation’s
-              medical outreach initiatives, providing essential healthcare
-              services to remote and underserved communities.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <staffRoles />
   </div>
   <div class="our-impact-container">
-    <div class="our-impact-header">
-      <p class="impact-header">THE SPARK OF CHANGE: OUR IMPACT</p>
-      <p class="about-team">
+    <TheHeaders width="714px" font-weight-value="500">
+      <template v-slot:header>THE SPARK OF CHANGE: OUR IMPACT</template>
+      <template v-slot:text-body>
         Since our inception, Lumina Spark Foundation has made a significant
         impact on the lives of thousands of individuals across Africa. Here are
         some highlights of our achievements:
-      </p>
-    </div>
+      </template>
+    </TheHeaders>
     <div class="metric-card">
       <div class="card1">
         <h1>50,000+</h1>
@@ -540,89 +408,12 @@ a {
   flex-direction: column;
   gap: 24px;
 }
-.top-head {
-  color: #df3800;
-  letter-spacing: 0.15%;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: center;
-}
-.about-team {
-  width: 714px;
-  margin: 0 auto;
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: 0.15px;
-}
-.the-team-sec {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.top-card,
-.bottom-card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-.bottom-card {
-  width: 806px;
-  margin: auto;
-}
-.card {
-  padding: 80px 16px;
-  border: 1px solid #e5e2e1;
-  flex-direction: column;
-  display: flex;
-  gap: 36px;
-  background-color: #f5f3f3;
-  border-radius: 24px;
-}
-.profile-card {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-}
-.card-name {
-  letter-spacing: 0.15%;
-  line-height: 24px;
-  font-weight: 500;
-  font-size: 16px;
-  color: #df3800;
-}
-.card-position {
-  font-size: 12px;
-  letter-spacing: 0.5px;
-}
-.text {
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: #231a11;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 .our-impact-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding: 50px 100px;
   background-color: #fffbf8;
-}
-.impact-header {
-  color: #df3800;
-  letter-spacing: 0.15%;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: center;
-}
-.impact-header {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 .about-team {
   width: 714px;

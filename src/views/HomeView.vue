@@ -1,7 +1,4 @@
 <script setup>
-import pause from '/pause.png'
-import aboutUs from '/about-us.png'
-import ourTeam from '/our-team.png'
 import InputGroup from '@/components/InputGroup.vue'
 import SocialImpact from '@/components/SocialImpact.vue'
 import OurCommitment from '@/components/OurCommitment.vue'
@@ -50,7 +47,7 @@ import CoreValues from '@/components/CoreValues.vue'
             sustainable growth within underserved communities across Africa.
           </p>
           <div>
-            <img :src="ourTeam" alt="File icon" />
+            <img src="/public/our-team.png" alt="File icon" />
             <p>10,000+ lives impacted</p>
           </div>
         </div>
@@ -59,9 +56,9 @@ import CoreValues from '@/components/CoreValues.vue'
       <RouterLink to="/about" class="button">Learn More</RouterLink>
     </div>
     <div class="image-container">
-      <img :src="aboutUs" alt="File icon" />
+      <img src="/public//about-us.png" alt="File icon" />
       <div class="pause-btn">
-        <img :src="pause" alt="File icon" />
+        <img src="/public/pause.png" alt="File icon" />
       </div>
     </div>
   </div>
