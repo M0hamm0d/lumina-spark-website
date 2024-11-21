@@ -5,8 +5,6 @@ import imgOverlay from '../../public/img-overlay.png'
 import TheButton from '@/components/TheButton.vue'
 import mission from '../../public/mission.png'
 import vision from '../../public/vision.png'
-import visionLogo from '../../public/visionLogo.png'
-import missionLogo from '../../public/missionLogo.png'
 import quote from '../../public/quote.png'
 import founder from '../../public/founder.png'
 import teamGroup from '../../public/team-group-pics.png'
@@ -14,6 +12,7 @@ import GetInvolved from '@/components/GetInvolved.vue'
 import TheHeaders from '@/components/TheHeaders.vue'
 import TheFaq from '@/components/TheFaq.vue'
 import staffRoles from '@/components/staffRoles.vue'
+import MissionAndVision from '@/components/MissionAndVision.vue'
 const data = [
   {
     id: 1,
@@ -70,31 +69,25 @@ function toggleAnswer(id) {
       </div>
       <div class="bottom-sec">
         <div class="mission-sec">
-          <div class="mission">
-            <div class="mission-title">
-              <img :src="missionLogo" alt="img" />
-              <p>Mission</p>
-            </div>
-            <p>
+          <MissionAndVision logo="../../public/missionLogo.png">
+            <template v-slot:header>Mission</template>
+            <template v-slot:text>
               To empower and uplift the most vulnerable populations in Africa by
               providing vital support, resources, and opportunities.
-            </p>
-          </div>
+            </template>
+          </MissionAndVision>
           <img :src="mission" alt="img" />
         </div>
         <div class="vision-sec">
           <img :src="vision" alt="img" />
-          <div class="vision">
-            <div class="vision-title">
-              <img :src="visionLogo" alt="img" />
-              <p>Vision</p>
-            </div>
-            <p>
+          <MissionAndVision logo="../../public/visionLogo.png">
+            <template v-slot:header>Vision</template>
+            <template v-slot:text>
               To see a transformed Africa where every individual, regardless of
               their background, has the opportunity to thrive and contribute to
               their community’s growth.
-            </p>
-          </div>
+            </template>
+          </MissionAndVision>
         </div>
       </div>
     </div>
@@ -294,33 +287,6 @@ a {
 .vision-sec {
   display: flex;
   gap: 16px;
-}
-.mission,
-.vision {
-  background-color: #ffd4ba;
-  display: flex;
-  flex-direction: column;
-  border-radius: 24px;
-  padding: 24px;
-  flex: 1;
-  gap: 16px;
-}
-.mission-title,
-.vision-title {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-.mission-title > p,
-.vision-title > p {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
-}
-.mission > p,
-.vision > p {
-  font-size: 22px;
-  line-height: 28px;
 }
 .accordion-container {
   padding: 0 100px 50px;
