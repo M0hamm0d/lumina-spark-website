@@ -2,6 +2,8 @@
 import GetInvolved from '@/components/GetInvolved.vue'
 import InputGroup from '@/components/InputGroup.vue'
 import programHeroSection from '../../public/programHeroSection.png'
+import TheCarousel from '@/components/TheCarousel.vue'
+import DynamicComponent from '@/components/DynamicComponent.vue'
 </script>
 
 <template>
@@ -16,7 +18,9 @@ import programHeroSection from '../../public/programHeroSection.png'
     </div>
     <img :src="programHeroSection" alt="img" />
   </div>
+  <DynamicComponent />
   <GetInvolved />
+  <TheCarousel />
   <InputGroup />
 </template>
 

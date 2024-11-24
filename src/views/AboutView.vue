@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import aboutHeroImg from '../../public/HeroLandscapeImageContainer.png'
 import imgOverlay from '../../public/img-overlay.png'
 import TheButton from '@/components/TheButton.vue'
@@ -10,39 +9,11 @@ import founder from '../../public/founder.png'
 import teamGroup from '../../public/team-group-pics.png'
 import GetInvolved from '@/components/GetInvolved.vue'
 import TheHeaders from '@/components/TheHeaders.vue'
-import TheFaq from '@/components/TheFaq.vue'
 import staffRoles from '@/components/staffRoles.vue'
 import MissionAndVision from '@/components/MissionAndVision.vue'
-const data = [
-  {
-    id: 1,
-    isOpen: false,
-    title: 'Where are these chairs assembled?',
-    text: 'We believe in treating all individuals with dignity and respect.',
-  },
-  {
-    id: 2,
-    isOpen: false,
-    title: 'How long do I have to return my chair?',
-    text: 'We believe in treating all individuals with dignity and respect.',
-  },
-  {
-    id: 3,
-    isOpen: false,
-    title: 'Do you ship to countries outside the EU?',
-    text: 'We believe in treating all individuals with dignity and respect.',
-  },
-]
-const faqs = ref(data)
-function toggleAnswer(id) {
-  faqs.value = faqs.value.map(faq =>
-    faq.isOpen && faq.id !== id ? { ...faq, isOpen: false } : faq,
-  )
-  console.log(id)
-  faqs.value = faqs.value.map(faq =>
-    faq.id === id ? { ...faq, isOpen: !faq.isOpen } : faq,
-  )
-}
+import OurValues from '@/components/OurValues.vue'
+import StatCard from '@/components/StatCard.vue'
+import TheCarousel from '@/components/TheCarousel.vue'
 </script>
 <template>
   <div class="container">
@@ -110,12 +81,7 @@ function toggleAnswer(id) {
         At Lumina Spark Foundation, we are guided by a core set of values that
         define our approach:
       </p>
-      <TheFaq
-        v-for="faq in faqs"
-        :key="faq.id"
-        :faq="faq"
-        @toggle-answer="toggleAnswer"
-      />
+      <OurValues />
     </div>
   </div>
 
@@ -160,43 +126,9 @@ function toggleAnswer(id) {
         some highlights of our achievements:
       </template>
     </TheHeaders>
-    <div class="metric-card">
-      <div class="card1">
-        <h1>50,000+</h1>
-        <div>
-          <h4>Lives Touched</h4>
-          <p>
-            We have provided free healthcare services to over 50,000 individuals
-            in remote and underserved areas.
-          </p>
-        </div>
-      </div>
-      <div class="card2">
-        <h1>&gt;$5million</h1>
-        <div>
-          <h4>Donation Raised</h4>
-          <p>
-            We have raised over 5 Million Dollars donation and funding from
-            International NGOs and civil society groups to drive meaningful
-            change and promote sustainable development.
-          </p>
-        </div>
-      </div>
-      <div class="card3">
-        <h1>10,000</h1>
-        <div>
-          <h4>Women Empowered</h4>
-          <p>
-            We have trained and supported 10,000 women, helping them gain
-            financial independence and become active contributors to their local
-            economies. Through vocational training and access to micro-loans, we
-            have enabled women to launch successful enterprises and improve
-            their livelihoods.
-          </p>
-        </div>
-      </div>
-    </div>
+    <StatCard />
   </div>
+  <TheCarousel />
   <GetInvolved />
 </template>
 <style scoped>
@@ -387,53 +319,5 @@ a {
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.15px;
-}
-.metric-card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  align-items: flex-end;
-}
-.card1,
-.card2,
-.card3 {
-  border-radius: 24px;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  padding: 32px 16px;
-}
-.card1 {
-  background-color: #ffd4ba;
-  height: 208px;
-  width: 258px;
-  color: #390e00;
-}
-.card2 {
-  background-color: #df3800;
-  height: 379px;
-  width: 349px;
-  color: white;
-}
-.card3 {
-  background-color: #b66100;
-  height: 289px;
-  color: white;
-  width: 441px;
-}
-.card1 > h1,
-.card2 > h1,
-.card3 > h1 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 40px;
-}
-.card1 > div > p,
-.card2 > div > p,
-.card3 > div > p {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.5%;
-  line-height: 16px;
 }
 </style>

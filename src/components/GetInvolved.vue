@@ -1,13 +1,15 @@
-<script setup></script>
+<script setup>
+import TheHeaders from './TheHeaders.vue'
+</script>
 <template>
   <div class="container">
-    <div class="heading">
-      <p class="topHead">GET INVOLED</p>
-      <p class="aboutTeam">
-        We are stronger together! There are many ways you can contribute to
-        Lumina Spark Foundation&apos;s mission:
-      </p>
-    </div>
+    <TheHeaders width="714px" font-weight-value="500">
+      <template v-slot:header>GET INVOLVED</template>
+      <template v-slot:text-body
+        >We are stronger together! There are many ways you can contribute to
+        Lumina Spark Foundation&apos;s mission:</template
+      >
+    </TheHeaders>
     <div class="getInvolveCards">
       <div class="getInvolveCard">
         <h5>DONATE</h5>
