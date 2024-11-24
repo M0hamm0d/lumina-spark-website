@@ -1,0 +1,173 @@
+<script setup>
+const slides = ref([
+  {
+    text: 'Thanks to Lumina Spark Foundation, I have been able to start my own tailoring business. The training and equipment provided have given me the skills and confidence to support my family. I am forever grateful for this opportunity to build a better future.',
+    name: 'Amina Ahmad',
+    occupation: 'Entrepreneur, Nigeria',
+    img: '../../public/aminah-muhammad.png',
+  },
+  {
+    text: 'Before Lumina Spark Foundation came to our community, I had little hope of continuing my education. Now, I am learning new things every day and even have access to digital skills training. This foundation has changed my life and given me hope for a brighter future.',
+    name: 'Jacob Haron',
+    occupation: 'Student, Kenya',
+    img: '../../public/jacob.png',
+  },
+  {
+    text: 'Working with Lumina Spark Foundation on their medical outreach program has been incredibly rewarding. Their dedication to improving healthcare access in remote areas is inspiring, and together we have been able to provide essential medical services to those who need it most.',
+    name: 'Dr. Michael Adisa',
+    occupation: 'Healthcare Partner, Nigeria',
+    img: '../../public/micheal.png',
+  },
+  {
+    text: 'Our partnership with Lumina Spark Foundation has empowered countless women in our region. By combining our resources and expertise, we have been able to provide vocational training and support that has transformed lives and strengthened our communities.',
+    name: 'Mary Okeke',
+    occupation: 'Women’s Cooperative Leader, Ghana',
+    img: '../../public/mary.png',
+  },
+  {
+    text: "Lumina Spark Foundation's holistic approach to community development aligns perfectly with our mission. We are proud to support their initiatives, which have demonstrated significant impact in improving the quality of life for many underserved populations in Africa.",
+    name: 'Jane Wilson',
+    occupation: 'Development Partner, USAID',
+    img: '../../public/lane.png',
+  },
+  {
+    text: 'Funding Lumina Spark Foundation’s educational programs has been a deeply fulfilling experience. Their commitment to providing quality education and digital skills to youths is creating a ripple effect of positive change across communities.',
+    name: 'David Liu',
+    occupation: 'Funding Partner, Global Education Fund',
+    img: '../../public/david.png',
+  },
+  {
+    text: 'Lumina Spark Foundation has been an exemplary partner in our efforts to improve living standards in rural areas. Their projects in healthcare and basic amenities have complemented our governmental initiatives and helped us reach more people effectively.',
+    name: 'Akintunde Akinleye',
+    occupation: 'Minister of Health, Nigeria',
+    img: '../../public/akintunde.png',
+  },
+  {
+    text: 'The collaborative efforts with Lumina Spark Foundation have significantly contributed to our community development goals. Their programs in shelter provision and food security have addressed critical needs and have been instrumental in our fight against poverty and hunger.',
+    name: 'Robert John',
+    occupation: 'Regional Development Coordinator, Kenya',
+    img: '../../public/robert.png',
+  },
+])
+const currentIndex = ref(0)
+function prevBtn() {
+  const isFirstSlide = currentIndex.value === 0
+  const newIndex = isFirstSlide
+    ? slides.value.length - 1
+    : currentIndex.value - 1
+  currentIndex.value = newIndex
+}
+function nextBtn() {
+  const isLastSlide = currentIndex.value === slides.value.length - 1
+  const newIndex = isLastSlide ? 0 : currentIndex.value + 1
+  currentIndex.value = newIndex
+}
+function goToSlide(slideIndex) {
+  currentIndex.value = slideIndex
+}
+
+const carouselInfiniteScroll = () => {
+  if (currentIndex.value === slides.value.length - 1) {
+    return (currentIndex.value = 0)
+  }
+  return (currentIndex.value += 1)
+}
+setInterval(() => {
+  carouselInfiniteScroll()
+}, 3000)
+function carouselCondition(slideIndex) {
+  return currentIndex.value === slideIndex
+}
+import { ref } from 'vue'
+</script>
+<template>
+  <div class="container">
+    <div class="testimonialSec">
+      <div class="">
+        <img src="/public/aboutQuote.png" alt="" />
+      </div>
+      <p class="testimony">{{ slides[currentIndex].text }}</p>
+      <div class="details">
+        <img :src="slides[currentIndex].img" alt="img" />
+        <div>
+          <h3>{{ slides[currentIndex].name }}</h3>
+          <p>{{ slides[currentIndex].occupation }}</p>
+        </div>
+      </div>
+      <div class="btnControl">
+        <button class="btn" @click="prevBtn">←</button>
+        <div class="dots">
+          <div
+            v-for="(slide, slideIndex) in slides"
+            :class="{ active: carouselCondition(slideIndex), dot: true }"
+            :key="slideIndex"
+            @click="() => goToSlide(slideIndex)"
+          ></div>
+        </div>
+        <button class="btn" @click="nextBtn">→</button>
+      </div>
+    </div>
+  </div>
+</template>
+<style scoped>
+.container {
+  padding: 50px 100px;
+  background-color: #fffbf8;
+}
+.testimonialSec {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  position: relative;
+}
+.testimony {
+  width: 822px;
+  font-size: 24px;
+  line-height: 32px;
+}
+.btnControl {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.btn {
+  padding: 16px;
+  background-color: #df3800;
+  border-radius: 1000px;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dots {
+  display: flex;
+  gap: 8px;
+}
+.dot {
+  display: flex;
+  width: 8px;
+  height: 8px;
+  gap: 10px;
+  background-color: #f0eded;
+  border-radius: 1000px;
+  transition: 1s;
+}
+.details {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #390e00;
+}
+.details p {
+  letter-spacing: 0.5%;
+}
+.active {
+  background-color: #514440;
+  width: 24px;
+}
+</style>
