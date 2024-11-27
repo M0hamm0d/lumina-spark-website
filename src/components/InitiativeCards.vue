@@ -31,6 +31,11 @@ const cards = [
     h3: 'Education & Empowerment',
     text: 'We break down barriers to education by providing scholarships, after-school programs, and digital skills training.',
   },
+  // {
+  //   image: '../../public/education.png',
+  //   header: 'Education & Empowerment',
+  //   text: 'We break down barriers to education by providing scholarships, after-school programs, and digital skills training.',
+  // },
 ]
 </script>
 <template>
