@@ -2,51 +2,50 @@
 import Button from './TheButton.vue'
 const cards = [
   {
-    src: '/health-care.png',
+    image: '/health-care.png',
     h3: 'Healthcare forAll',
     text: 'We deliver free medical care through mobile clinics, reaching remote communities with essential medical services and health education',
   },
   {
-    src: '../../public/learningEarly.png',
-    h3: 'Early Learning Initiative:',
+    image: '/public/learningEarly.png',
+    header: 'Early Learning Initiative:',
     text: 'We deliver free medical care through mobile clinics, reaching remote communities with essential medical services and health education.',
   },
   {
-    src: '../../public/shelter&home.png',
-    h3: 'Shelter & Hope:',
-    text: 'We offer safe havens and essential support to the homeless and vulnerable, ensuring access to food, shelter, and clothing.',
+    image: '/public/shelter&home.png',
+    header: 'Shelter & Hope:',
+    description:
+      'We offer safe havens and essential support to the homeless and vulnerable, ensuring access to food, shelter, and clothing.',
   },
   {
-    src: '../../public/disaster.png',
-    h3: 'Disaster Relief and Recovery:',
-    text: 'In times of crisis, we provide emergency aid and support communities in rebuilding their lives after natural disasters.',
+    image: '/public/disaster.png',
+    header: 'Disaster Relief and Recovery:',
+    description:
+      'In times of crisis, we provide emergency aid and support communities in rebuilding their lives after natural disasters.',
   },
   {
-    src: '../../public/sustainable.png',
-    h3: 'Sustainability Initiative:',
-    text: 'We empower communities through agricultural training and access to clean water initiatives for self-sufficiency and long-term development.',
+    image: '/public/sustainable.png',
+    header: 'Sustainability Initiative:',
+    description:
+      'We empower communities through agricultural training and access to clean water initiatives for self-sufficiency and long-term development.',
   },
   {
-    src: '../../public/education.png',
-    h3: 'Education & Empowerment',
-    text: 'We break down barriers to education by providing scholarships, after-school programs, and digital skills training.',
+    image: '/public/education.png',
+    header: 'Education & Empowerment',
+    description:
+      'We break down barriers to education by providing scholarships, after-school programs, and digital skills training.',
   },
-  // {
-  //   image: '../../public/education.png',
-  //   header: 'Education & Empowerment',
-  //   text: 'We break down barriers to education by providing scholarships, after-school programs, and digital skills training.',
-  // },
 ]
 </script>
 <template>
   <div class="initiative-cards">
     <div v-for="(item, index) in cards" :key="index" class="initiative-card">
-      <img :src="item.src" alt="File icon" />
+      <img :src="item.image" alt="File icon" />
       <div>
         <div class="head">
-          <h3>{{ item.h3 }}</h3>
+          <h3>{{ item.header }}</h3>
           <p>
-            {{ item.text }}
+            {{ item.description }}
           </p>
         </div>
         <Button href="about">Learn More</Button>
