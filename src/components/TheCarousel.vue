@@ -1,52 +1,60 @@
 <script setup>
 const slides = ref([
   {
-    text: 'Thanks to Lumina Spark Foundation, I have been able to start my own tailoring business. The training and equipment provided have given me the skills and confidence to support my family. I am forever grateful for this opportunity to build a better future.',
+    description:
+      'Thanks to Lumina Spark Foundation, I have been able to start my own tailoring business. The training and equipment provided have given me the skills and confidence to support my family. I am forever grateful for this opportunity to build a better future.',
     name: 'Amina Ahmad',
-    occupation: 'Entrepreneur, Nigeria',
-    img: '../../public/aminah-muhammad.png',
+    role: 'Entrepreneur, Nigeria',
+    img: '/public/aminah-muhammad.png',
   },
   {
-    text: 'Before Lumina Spark Foundation came to our community, I had little hope of continuing my education. Now, I am learning new things every day and even have access to digital skills training. This foundation has changed my life and given me hope for a brighter future.',
+    description:
+      'Before Lumina Spark Foundation came to our community, I had little hope of continuing my education. Now, I am learning new things every day and even have access to digital skills training. This foundation has changed my life and given me hope for a brighter future.',
     name: 'Jacob Haron',
-    occupation: 'Student, Kenya',
-    img: '../../public/jacob.png',
+    role: 'Student, Kenya',
+    img: '/public/jacob.png',
   },
   {
-    text: 'Working with Lumina Spark Foundation on their medical outreach program has been incredibly rewarding. Their dedication to improving healthcare access in remote areas is inspiring, and together we have been able to provide essential medical services to those who need it most.',
+    description:
+      'Working with Lumina Spark Foundation on their medical outreach program has been incredibly rewarding. Their dedication to improving healthcare access in remote areas is inspiring, and together we have been able to provide essential medical services to those who need it most.',
     name: 'Dr. Michael Adisa',
-    occupation: 'Healthcare Partner, Nigeria',
-    img: '../../public/micheal.png',
+    role: 'Healthcare Partner, Nigeria',
+    img: '/public/micheal.png',
   },
   {
-    text: 'Our partnership with Lumina Spark Foundation has empowered countless women in our region. By combining our resources and expertise, we have been able to provide vocational training and support that has transformed lives and strengthened our communities.',
+    description:
+      'Our partnership with Lumina Spark Foundation has empowered countless women in our region. By combining our resources and expertise, we have been able to provide vocational training and support that has transformed lives and strengthened our communities.',
     name: 'Mary Okeke',
-    occupation: 'Women’s Cooperative Leader, Ghana',
-    img: '../../public/mary.png',
+    role: 'Women’s Cooperative Leader, Ghana',
+    img: '/public/mary.png',
   },
   {
-    text: "Lumina Spark Foundation's holistic approach to community development aligns perfectly with our mission. We are proud to support their initiatives, which have demonstrated significant impact in improving the quality of life for many underserved populations in Africa.",
+    description:
+      "Lumina Spark Foundation's holistic approach to community development aligns perfectly with our mission. We are proud to support their initiatives, which have demonstrated significant impact in improving the quality of life for many underserved populations in Africa.",
     name: 'Jane Wilson',
-    occupation: 'Development Partner, USAID',
-    img: '../../public/lane.png',
+    role: 'Development Partner, USAID',
+    img: '/public/lane.png',
   },
   {
-    text: 'Funding Lumina Spark Foundation’s educational programs has been a deeply fulfilling experience. Their commitment to providing quality education and digital skills to youths is creating a ripple effect of positive change across communities.',
+    description:
+      'Funding Lumina Spark Foundation’s educational programs has been a deeply fulfilling experience. Their commitment to providing quality education and digital skills to youths is creating a ripple effect of positive change across communities.',
     name: 'David Liu',
-    occupation: 'Funding Partner, Global Education Fund',
-    img: '../../public/david.png',
+    role: 'Funding Partner, Global Education Fund',
+    img: '/public/david.png',
   },
   {
-    text: 'Lumina Spark Foundation has been an exemplary partner in our efforts to improve living standards in rural areas. Their projects in healthcare and basic amenities have complemented our governmental initiatives and helped us reach more people effectively.',
+    description:
+      'Lumina Spark Foundation has been an exemplary partner in our efforts to improve living standards in rural areas. Their projects in healthcare and basic amenities have complemented our governmental initiatives and helped us reach more people effectively.',
     name: 'Akintunde Akinleye',
-    occupation: 'Minister of Health, Nigeria',
-    img: '../../public/akintunde.png',
+    role: 'Minister of Health, Nigeria',
+    img: '/public/akintunde.png',
   },
   {
-    text: 'The collaborative efforts with Lumina Spark Foundation have significantly contributed to our community development goals. Their programs in shelter provision and food security have addressed critical needs and have been instrumental in our fight against poverty and hunger.',
+    description:
+      'The collaborative efforts with Lumina Spark Foundation have significantly contributed to our community development goals. Their programs in shelter provision and food security have addressed critical needs and have been instrumental in our fight against poverty and hunger.',
     name: 'Robert John',
-    occupation: 'Regional Development Coordinator, Kenya',
-    img: '../../public/robert.png',
+    role: 'Regional Development Coordinator, Kenya',
+    img: '/public/robert.png',
   },
 ])
 const currentIndex = ref(0)
@@ -86,12 +94,12 @@ import { ref } from 'vue'
       <div class="">
         <img src="/public/aboutQuote.png" alt="" />
       </div>
-      <p class="testimony">{{ slides[currentIndex].text }}</p>
+      <p class="testimony">{{ slides[currentIndex].description }}</p>
       <div class="details">
         <img :src="slides[currentIndex].img" alt="img" />
         <div>
           <h3>{{ slides[currentIndex].name }}</h3>
-          <p>{{ slides[currentIndex].occupation }}</p>
+          <p>{{ slides[currentIndex].role }}</p>
         </div>
       </div>
       <div class="btnControl">
