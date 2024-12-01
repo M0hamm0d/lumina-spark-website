@@ -6,7 +6,7 @@ import ShelterFood from './ShelterFood.vue'
 import BasicAmenities from './BasicAmenities.vue'
 import { ref } from 'vue'
 
-const currentTab = ref(1)
+const currentTab = ref(0)
 const toggleTab = index => {
   currentTab.value = index
 }
@@ -17,6 +17,13 @@ const tabs = [
   'Shelter and Food',
   'Basic Amenities',
 ]
+const tabModules = [
+  WomenEmpowerment,
+  EduSupport,
+  MedOutreach,
+  ShelterFood,
+  BasicAmenities,
+]
 </script>
 <template>
   <div class="container">
@@ -24,26 +31,14 @@ const tabs = [
       <div
         v-for="(item, index) in tabs"
         :key="index"
-        :class="['tab', { active: currentTab === index + 1 }]"
-        @click="() => toggleTab(index + 1)"
+        :class="['tab', { active: currentTab === index }]"
+        @click="toggleTab(index)"
       >
         {{ item }}
       </div>
     </div>
-    <div :class="['ourProgramCategory', { activeProgram: currentTab === 1 }]">
-      <WomenEmpowerment />
-    </div>
-    <div :class="['ourProgramCategory', { activeProgram: currentTab === 2 }]">
-      <EduSupport />
-    </div>
-    <div :class="['ourProgramCategory', { activeProgram: currentTab === 3 }]">
-      <MedOutreach />
-    </div>
-    <div :class="['ourProgramCategory', { activeProgram: currentTab === 4 }]">
-      <ShelterFood />
-    </div>
-    <div :class="['ourProgramCategory', { activeProgram: currentTab === 5 }]">
-      <BasicAmenities />
+    <div class="ourProgramCategory">
+      <component :is="tabModules[currentTab]"></component>
     </div>
   </div>
 </template>
@@ -77,12 +72,9 @@ const tabs = [
 }
 .ourProgramCategory {
   padding: 50px 100px;
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 24px;
   background-color: #fffbf8;
-}
-.activeProgram {
-  display: flex;
 }
 </style>
