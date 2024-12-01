@@ -1,9 +1,10 @@
 <script setup>
-defineProps(['width', 'classes', 'fontWeightValue'])
+defineProps(['width', 'classes', 'fontWeightValue', 'header'])
 </script>
 <template>
   <div class="header">
     <h3>
+      {{ header }}
       <slot name="header"></slot>
     </h3>
     <div :style="{ width: width }">

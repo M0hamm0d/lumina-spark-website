@@ -3,7 +3,7 @@ import Button from './TheButton.vue'
 const cards = [
   {
     image: '/health-care.png',
-    h3: 'Healthcare forAll',
+    header: 'Healthcare forAll',
     text: 'We deliver free medical care through mobile clinics, reaching remote communities with essential medical services and health education',
   },
   {
