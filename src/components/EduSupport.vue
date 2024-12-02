@@ -15,7 +15,7 @@
           <div class="initiative">
             <div>
               <div class="logo">
-                <img src="../../public/initiative-1.png" alt="img" />
+                <img src="/initiative-1.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -27,7 +27,7 @@
             </div>
             <div>
               <div class="logo">
-                <img src="../../public//Money.png" alt="img" />
+                <img src="/Money.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -39,7 +39,7 @@
             </div>
             <div>
               <div class="logo">
-                <img src="../../public/mentorship.png" alt="img" />
+                <img src="/mentorship.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -52,21 +52,21 @@
           </div>
         </div>
         <div class="stat">
-          <img src="../../public/Growth.png" alt="growth" />
+          <img src="/Growth.png" alt="growth" />
           <p>
             Supported the education of 20,000+ youths and established multiple
             learning centers.
           </p>
         </div>
       </div>
-      <img src="../../public/education1.png" alt="img" />
+      <img src="/education1.png" alt="img" />
     </div>
   </div>
   <div class="bottomSec">
-    <img src="../../public/education2.png" alt="growth" />
-    <img src="../../public/education3.png" alt="growth" />
-    <img src="../../public/education4.png" alt="growth" />
-    <img src="../../public/education5.png" alt="growth" />
+    <img src="/education2.png" alt="growth" />
+    <img src="/education3.png" alt="growth" />
+    <img src="/education4.png" alt="growth" />
+    <img src="/education5.png" alt="growth" />
   </div>
 </template>
 <style scoped>

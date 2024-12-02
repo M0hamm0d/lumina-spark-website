@@ -15,7 +15,7 @@
           <div class="initiative">
             <div>
               <div class="logo">
-                <img src="../../public/initiative1.png" alt="img" />
+                <img src="/initiative1.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -27,7 +27,7 @@
             </div>
             <div>
               <div class="logo">
-                <img src="../../public/Money.png" alt="img" />
+                <img src="/Money.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -38,7 +38,7 @@
             </div>
             <div>
               <div class="logo">
-                <img src="../../public/mentorship.png" alt="img" />
+                <img src="/mentorship.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -51,18 +51,18 @@
           </div>
         </div>
         <div class="stat">
-          <img src="../../public/Growth.png" alt="growth" />
+          <img src="/Growth.png" alt="growth" />
           <p>Provided shelter and meals to over 5,000 homeless individuals</p>
         </div>
       </div>
-      <img src="../../public/shelter1.png" alt="img" />
+      <img src="/shelter1.png" alt="img" />
     </div>
   </div>
   <div class="bottomSec">
-    <img src="../../public/shelter2.png" alt="growth" />
-    <img src="../../public/shelter3.png" alt="growth" />
-    <img src="../../public/shelter4.png" alt="growth" />
-    <img src="../../public/shelter5.png" alt="growth" />
+    <img src="/shelter2.png" alt="growth" />
+    <img src="/shelter3.png" alt="growth" />
+    <img src="/shelter4.png" alt="growth" />
+    <img src="/shelter5.png" alt="growth" />
   </div>
 </template>
 <style scoped>

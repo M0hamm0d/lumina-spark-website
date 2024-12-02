@@ -1,9 +1,9 @@
 <script setup>
 const images = [
-  { src: '../../public/african-lead.png', text: 'African-led Solutions' },
-  { src: '../../public/community.png', text: 'Community' },
-  { src: '../../public/sustainability.png', text: 'Sustainability' },
-  { src: '../../public/empowerment.png', text: 'Empowerment' },
+  { image: '/african-lead.png', description: 'African-led Solutions' },
+  { image: '/community.png', description: 'Community' },
+  { image: '/sustainability.png', description: 'Sustainability' },
+  { image: '/empowerment.png', description: 'Empowerment' },
 ]
 </script>
 <template>
@@ -15,8 +15,8 @@ const images = [
         :key="index"
         class="descriptors-card"
       >
-        <img :src="item.src" alt="File icon" />
-        <p>{{ item.text }}</p>
+        <img :src="item.image" alt="File icon" />
+        <p>{{ item.description }}</p>
       </div>
     </div>
   </div>

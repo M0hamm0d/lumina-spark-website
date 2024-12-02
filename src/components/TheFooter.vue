@@ -1,13 +1,13 @@
 <script setup>
-import logo from '../../public/footer-logo.png'
-import linkdinLogo from '../../public/linkedinLogo.png'
-import xLogo from '../../public/x-logo.png'
-import facebookLogo from '../../public/facebook-logo.png'
-import ytLogo from '../../public/yt-logo.png'
-import tiktokLogo from '../../public/tiktok-logo.png'
-import emailLogo from '../../public/email-logo.png'
-import phoneLogo from '../../public/phone-logo.png'
-import locationLogo from '../../public/location-logo.png'
+import logo from '/footer-logo.png'
+import linkdinLogo from '/linkedinLogo.png'
+import xLogo from '/x-logo.png'
+import facebookLogo from '/facebook-logo.png'
+import ytLogo from '/yt-logo.png'
+import tiktokLogo from '/tiktok-logo.png'
+import emailLogo from '/email-logo.png'
+import phoneLogo from '/phone-logo.png'
+import locationLogo from '/location-logo.png'
 </script>
 <template>
   <footer class="">

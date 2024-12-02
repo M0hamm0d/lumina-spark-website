@@ -6,19 +6,22 @@ const data = [
     id: 1,
     isOpen: false,
     title: 'Where are these chairs assembled?',
-    text: 'We believe in treating all individuals with dignity and respect.',
+    description:
+      'We believe in treating all individuals with dignity and respect.',
   },
   {
     id: 2,
     isOpen: false,
     title: 'How long do I have to return my chair?',
-    text: 'We believe in treating all individuals with dignity and respect.',
+    description:
+      'We believe in treating all individuals with dignity and respect.',
   },
   {
     id: 3,
     isOpen: false,
     title: 'Do you ship to countries outside the EU?',
-    text: 'We believe in treating all individuals with dignity and respect.',
+    description:
+      'We believe in treating all individuals with dignity and respect.',
   },
 ]
 const faqs = ref(data)

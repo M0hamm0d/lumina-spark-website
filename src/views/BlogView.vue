@@ -2,7 +2,7 @@
 import PublisherDetails from '@/components/PublisherDetails.vue'
 const data = [
   {
-    img: '../../public/blogHero1.png',
+    img: '../../blogHero1.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Digital Skills',
@@ -11,7 +11,7 @@ const data = [
     body: 'Recently, we established several learning centers equipped with state-of-the-art technology, providing students with hands-on experience.',
   },
   {
-    img: '../../public/blogHero2.png',
+    img: '../../blogHero2.png',
     date: 'July 25, 2015',
     timeRead: '3 mins read',
     summary: 'Women Empowerment',
@@ -19,7 +19,7 @@ const data = [
     body: 'Take Aisha, for example. After participating in our vocational training and receiving a micro-loan, she launched a tailoring business in her community in Kenya.',
   },
   {
-    img: '../../public/blogHero3.png',
+    img: '../../blogHero3.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Digital Skills',
@@ -27,7 +27,7 @@ const data = [
     body: 'Take Aisha, for example. After participating in our vocational training and receiving a micro-loan, she launched a tailoring business in her community in Kenya.',
   },
   {
-    img: '../../public/blogHero3.png',
+    img: '../../blogHero3.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Shelter and Food',
@@ -35,7 +35,7 @@ const data = [
     body: 'One success story is Emmanuel, who, after losing his home, found refuge in our shelter. With the support of our programs, he secured employment and moved into his own apartment within six months.',
   },
   {
-    img: '../../public/blogHero3.png',
+    img: '../../blogHero3.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Water and Solar Energy',
@@ -43,7 +43,7 @@ const data = [
     body: 'In rural Tanzania, we recently completed a project that brought clean drinking water to a village of 3,000 people. Prior to this, residents had to walk miles to access water, which was often contaminated.',
   },
   {
-    img: '../../public/blogHero3.png',
+    img: '../../blogHero3.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Education',
@@ -51,7 +51,7 @@ const data = [
     body: 'Tone inspiring story is that of Mary, a young girl from Uganda. With the support of our scholarship program, she was able to complete her secondary education and is now pursuing a degree in engineering.',
   },
   {
-    img: '../../public/blogHero3.png',
+    img: '../../blogHero3.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Education',

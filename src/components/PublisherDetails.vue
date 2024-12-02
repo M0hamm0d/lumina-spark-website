@@ -1,6 +1,6 @@
 <template>
   <div class="body-bottom">
-    <img src="../../public/blogProfile.png" alt="img" />
+    <img src="/blogProfile.png" alt="img" />
     <div>
       <h5>Muhammad Adeyemi</h5>
       <p>Founder/CEO</p>

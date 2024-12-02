@@ -3,7 +3,7 @@
   <div class="topSection">
     <div class="topHeader">Medical Outreach</div>
     <div class="topBody">
-      <img src="../../public/medical1.png" alt="img" />
+      <img src="/medical1.png" alt="img" />
       <div class="bodyRight">
         <p>
           Access to quality healthcare is a fundamental right. Our Medical
@@ -15,7 +15,7 @@
           <div class="initiative">
             <div>
               <div class="logo">
-                <img src="../../public/initiative-1.png" alt="img" />
+                <img src="/initiative-1.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -26,7 +26,7 @@
             </div>
             <div>
               <div class="logo">
-                <img src="../../public/Money.png" alt="img" />
+                <img src="/Money.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -38,7 +38,7 @@
             </div>
             <div>
               <div class="logo">
-                <img src="../../public/mentorship.png" alt="img" />
+                <img src="/mentorship.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="stat">
-          <img src="../../public/Growth.png" alt="growth" />
+          <img src="/Growth.png" alt="growth" />
           <p>
             Over 50,000 individuals received healthcare services; numerous
             health camps.
@@ -61,10 +61,10 @@
     </div>
   </div>
   <div class="bottomSec">
-    <img src="../../public/medical2.png" alt="growth" />
-    <img src="../../public/medical3.png" alt="growth" />
-    <img src="../../public/medical4.png" alt="growth" />
-    <img src="../../public/medical5.png" alt="growth" />
+    <img src="/medical2.png" alt="growth" />
+    <img src="/medical3.png" alt="growth" />
+    <img src="/medical4.png" alt="growth" />
+    <img src="/medical5.png" alt="growth" />
   </div>
 </template>
 <style scoped>

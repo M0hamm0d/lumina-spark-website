@@ -1,22 +1,22 @@
 <script setup>
 const cards = [
   {
-    src: '../../public/amplifying-edu.png',
+    src: '/amplifying-edu.png',
     header: 'Amplifying Education',
     text: ' We ensure access to quality education, the foundation for a better life.',
   },
   {
-    src: '../../public/bridge.png',
+    src: '/bridge.png',
     header: 'Bridging the Digital Divide:',
     text: ' We equip individuals with digital literacy, opening doors to opportunity.',
   },
   {
-    src: '../../public/empowering-women.png',
+    src: '/empowering-women.png',
     header: 'Empowering Women',
     text: 'We provide women with the skills and resources to achieve economic security.',
   },
   {
-    src: '../../public/fulfil.png',
+    src: '/fulfil.png',
     header: 'Fulfilling Basic Needs:',
     text: ' We offer vital support, including healthcare, shelter, and food security.',
   },

@@ -3,7 +3,7 @@
   <div class="topSection">
     <div class="topHeader">Basic Amenities</div>
     <div class="topBody">
-      <img src="../../public/solar1.png" alt="img" />
+      <img src="/solar1.png" alt="img" />
       <div class="bodyRight">
         <p>
           Access to basic amenities like clean water, electricity, and housing
@@ -16,7 +16,7 @@
           <div class="initiative">
             <div>
               <div class="logo">
-                <img src="../../public/initiative1.png" alt="img" />
+                <img src="/initiative1.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -27,7 +27,7 @@
             </div>
             <div>
               <div class="logo">
-                <img src="../../public/Money.png" alt="img" />
+                <img src="/Money.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -38,7 +38,7 @@
             </div>
             <div>
               <div class="logo">
-                <img src="../../public/mentorship.png" alt="img" />
+                <img src="/mentorship.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="stat">
-          <img src="../../public/Growth.png" alt="growth" />
+          <img src="/Growth.png" alt="growth" />
           <p>
             Installed over 200 water filtration systems and 100 solar panel
             units
@@ -60,10 +60,10 @@
     </div>
   </div>
   <div class="bottomSec">
-    <img src="../../public/solar2.png" alt="growth" />
-    <img src="../../public/solar3.png" alt="growth" />
-    <img src="../../public/solar4.png" alt="growth" />
-    <img src="../../public/solar5.png" alt="growth" />
+    <img src="/solar2.png" alt="growth" />
+    <img src="/solar3.png" alt="growth" />
+    <img src="/solar4.png" alt="growth" />
+    <img src="/solar5.png" alt="growth" />
   </div>
 </template>
 <style scoped>

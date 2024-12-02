@@ -1,7 +1,7 @@
 <script setup>
 import GetInvolved from '@/components/GetInvolved.vue'
 import InputGroup from '@/components/InputGroup.vue'
-import programHeroSection from '../../public/programHeroSection.png'
+import programHeroSection from '../../programHeroSection.png'
 import TheCarousel from '@/components/TheCarousel.vue'
 import DynamicComponent from '@/components/DynamicComponent.vue'
 </script>

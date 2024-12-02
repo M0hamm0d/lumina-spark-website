@@ -1,10 +1,10 @@
 <script setup>
 const partners = [
-  { partners: '../../public/google.png' },
-  { partners: '../../public/microsoft.png' },
-  { partners: '../../public/meta.png' },
-  { partners: '../../public/slack.png' },
-  { partners: '../../public/stripe.png' },
+  { partners: '/google.png' },
+  { partners: '/microsoft.png' },
+  { partners: '/meta.png' },
+  { partners: '/slack.png' },
+  { partners: '/stripe.png' },
 ]
 </script>
 <template>
