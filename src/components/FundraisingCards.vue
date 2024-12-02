@@ -2,44 +2,49 @@
 import Button from '@/components/TheButton.vue'
 const cards = [
   {
-    src: '../../public/OngoingFundraisingImagePortrait.png',
-    h3: 'Build mobile medical clinics for remote communities',
-    text: 'Help us raise funds to buy new, well-equipped vehicle to expand our free medical outreach program and deliver critical healthcare services to even more remote...',
+    src: '/OngoingFundraisingImagePortrait.png',
+    header: 'Build mobile medical clinics for remote communities',
+    description:
+      'Help us raise funds to buy new, well-equipped vehicle to expand our free medical outreach program and deliver critical healthcare services to even more remote...',
     raisedAmount: '$20,650',
     raisedTotal: 'raised of $50,000',
-    indicatorSrc: '../../public/AmountRaisedIndicator1.png',
+    indicatorSrc: '/AmountRaisedIndicator1.png',
   },
   {
-    src: '../../public/img1.png',
-    h3: 'Educate the Next Generation',
-    text: 'Support our scholarship program for girls and empower them to pursue their dreams.',
+    src: '/img1.png',
+    header: 'Educate the Next Generation',
+    description:
+      'Support our scholarship program for girls and empower them to pursue their dreams.',
     raisedAmount: '$35,000',
     raisedTotal: 'raised of $45,000',
-    indicatorSrc: '../../public/AmountRaisedIndicator2.png',
+    indicatorSrc: '/AmountRaisedIndicator2.png',
   },
   {
-    src: '../../public/safe-haven.png',
-    h3: 'Safe Haven for the Homeless',
-    text: 'Help us raise funds to establish a new and safe shelter to the Internally Displaced Per...',
+    src: '/safe-haven.png',
+    header: 'Safe Haven for the Homeless',
+    description:
+      'Help us raise funds to establish a new and safe shelter to the Internally Displaced Per...',
     raisedAmount: '$15,050',
     raisedTotal: 'raised of $100,000',
-    indicatorSrc: '../../public/indicator3.png',
+    indicatorSrc: '/indicator3.png',
   },
   {
-    src: '../../public/img3.png',
-    h3: 'Community Kitchen Project',
-    text: 'Contribute to our campaign to establish a community kitchen providing meals to tho...',
+    src: '/img3.png',
+    header: 'Community Kitchen Project',
+    description:
+      'Contribute to our campaign to establish a community kitchen providing meals to tho...',
     raisedAmount: '$4,400',
     raisedTotal: 'raised of $45,000',
-    indicatorSrc: '../../public/indicator4.png',
+    indicatorSrc: '/indicator4.png',
   },
   {
-    src: '../../public/empWomen.png',
-    h3: 'Empower Women Entrepreneurs',
-    text: 'Donate to provide training programs and essential equipment for aspiring entrepre...',
+    src: '/empWomen.png',
+    header: 'Empower Women Entrepreneurs',
+    description:
+      'Donate to provide training programs and essential equipment for aspiring entrepre...',
     raisedAmount: '$8,650',
     raisedTotal: 'raised of $12,000',
-    indicatorSrc: '../../public/indicator5.png',
+    indicatorSrc: '/indicator5.png',
   },
 ]
 </script>
@@ -53,8 +58,8 @@ const cards = [
       <img :src="item.src" alt="img" />
       <div>
         <div>
-          <p class="h3">{{ item.h3 }}</p>
-          <p>{{ item.text }}</p>
+          <p class="header">{{ item.header }}</p>
+          <p>{{ item.description }}</p>
         </div>
         <div class="cta">
           <div>
@@ -77,8 +82,8 @@ const cards = [
         <img :src="item.src" alt="img" />
         <div>
           <div>
-            <p class="h4">{{ item.h3 }}</p>
-            <p>{{ item.text }}</p>
+            <p class="h4">{{ item.header }}</p>
+            <p>{{ item.description }}</p>
           </div>
           <div class="cta-small">
             <div>
@@ -128,7 +133,7 @@ a {
   flex-direction: column;
   gap: 8px;
 }
-.ongoing-fundraising-big-card > div .h3 {
+.ongoing-fundraising-big-card > div .header {
   font-size: 22px;
   font-weight: 600;
   line-height: 30px;

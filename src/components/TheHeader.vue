@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import logo from '../../public/lumina-logo.png'
-import dropdown from '../../public/dropdown.png'
+import logo from '/lumina-logo.png'
+import dropdown from '/dropdown.png'
 </script>
 <template>
   <header class="header">

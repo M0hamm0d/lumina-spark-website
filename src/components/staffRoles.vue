@@ -1,7 +1,7 @@
 <script setup>
 const card = [
   {
-    src: '../../public/about-profile1.png',
+    src: '/about-profile1.png',
     name: 'Dr. Grace Olatunde',
     role: 'Chief Operating Officer',
     roleDuty1:
@@ -10,7 +10,7 @@ const card = [
       'Grace is committed to driving operational excellence and maximizing the foundation’s impact across Africa.',
   },
   {
-    src: '../../public/about-profile-2.png',
+    src: '/about-profile-2.png',
     name: 'Dr. Grace Olatunde',
     role: 'Chief Operating Officer',
     roleDuty1:
@@ -19,7 +19,7 @@ const card = [
       'Grace is committed to driving operational excellence and maximizing the foundation’s impact across Africa.',
   },
   {
-    src: '../../public/about-profile-3.png',
+    src: '/about-profile-3.png',
     name: 'Dr. Grace Olatunde',
     role: 'Chief Operating Officer',
     roleDuty1:
@@ -28,7 +28,7 @@ const card = [
       'Grace is committed to driving operational excellence and maximizing the foundation’s impact across Africa.',
   },
   {
-    src: '../../public/about-profile-4.png',
+    src: '/about-profile-4.png',
     name: 'Dr. John Chukwuma',
     role: 'Director of Health Programs',
     roleDuty1:
@@ -37,7 +37,7 @@ const card = [
       'As the Director of Health Programs, he leads the foundation’s medical outreach initiatives, providing essential healthcare services to remote and underserved communities.',
   },
   {
-    src: '../../public/about-profile-5.png',
+    src: '/about-profile-5.png',
     name: 'Dr. John Chukwuma',
     role: 'Director of Health Programs',
     roleDuty1:
@@ -46,7 +46,7 @@ const card = [
       'As the Director of Health Programs, he leads the foundation’s medical outreach initiatives, providing essential healthcare services to remote and underserved communities.',
   },
   {
-    src: '../../public/about-profile-6.png',
+    src: '/about-profile-6.png',
     name: 'Dr. John Chukwuma',
     role: 'Director of Health Programs',
     roleDuty1:

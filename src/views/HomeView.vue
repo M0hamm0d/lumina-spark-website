@@ -47,7 +47,7 @@ import CoreValues from '@/components/CoreValues.vue'
             sustainable growth within underserved communities across Africa.
           </p>
           <div>
-            <img src="/public/our-team.png" alt="File icon" />
+            <img src="/our-team.png" alt="File icon" />
             <p>10,000+ lives impacted</p>
           </div>
         </div>
@@ -56,16 +56,15 @@ import CoreValues from '@/components/CoreValues.vue'
       <RouterLink to="/about" class="button">Learn More</RouterLink>
     </div>
     <div class="image-container">
-      <img src="/public//about-us.png" alt="File icon" />
+      <img src="/about-us.png" alt="File icon" />
       <div class="pause-btn">
-        <img src="/public/pause.png" alt="File icon" />
+        <img src="/pause.png" alt="File icon" />
       </div>
     </div>
   </div>
   <OurCommitment />
   <div id="our-initiatives" class="our-initiative">
-    <TheHeaders>
-      <template v-slot:header>OUR INITIATIVE</template>
+    <TheHeaders header="OUR INITIATIVES">
       <template v-slot:text-body
         >Lumina Spark Foundation tackles Africa&lsquo;s most pressing challenges
         through a comprehensive approach that addresses the well-being of
@@ -76,11 +75,12 @@ import CoreValues from '@/components/CoreValues.vue'
     <InitiativeCards />
   </div>
   <div id="ongoing-fundraising" class="ongoing-camp-container">
-    <TheHeaders classes="font-size" width="719px">
-      <template v-slot:header>ONGOING FUNDRAISING CAMPAIGNS</template>
-      <template v-slot:optional-slot
-        >Make a Difference Today: Support Our Critical Initiatives</template
-      >
+    <TheHeaders
+      classes="font-size"
+      width="719px"
+      header="ONGOING FUNDRAISING CAMPAIGNS"
+      optional-slot="Make a Difference Today: Support Our Critical Initiatives"
+    >
       <template v-slot:text-body
         >Lumina Spark Foundation relies on your generosity to continue
         empowering Africa&lsquo;s youth, women, and children. Here are some of
@@ -88,6 +88,16 @@ import CoreValues from '@/components/CoreValues.vue'
         across the continent:</template
       >
     </TheHeaders>
+    <!-- <TheHeaders
+      classes="font-size"
+      width="719px"
+      header="ONGOING FUNDRAISING CAMPAIGNS"
+      optional-slot="Make a Difference Today: Support Our Critical Initiatives"
+      description="Lumina Spark Foundation relies on your generosity to continue
+        empowering Africa&lsquo;s youth, women, and children. Here are some of
+        our ongoing fundraising campaigns that directly address critical needs
+        across the continent:"
+    /> -->
     <FundraisingCards />
   </div>
   <InputGroup />

@@ -5,56 +5,56 @@ const slides = ref([
       'Thanks to Lumina Spark Foundation, I have been able to start my own tailoring business. The training and equipment provided have given me the skills and confidence to support my family. I am forever grateful for this opportunity to build a better future.',
     name: 'Amina Ahmad',
     role: 'Entrepreneur, Nigeria',
-    img: '/public/aminah-muhammad.png',
+    img: '/aminah-muhammad.png',
   },
   {
     description:
       'Before Lumina Spark Foundation came to our community, I had little hope of continuing my education. Now, I am learning new things every day and even have access to digital skills training. This foundation has changed my life and given me hope for a brighter future.',
     name: 'Jacob Haron',
     role: 'Student, Kenya',
-    img: '/public/jacob.png',
+    img: '/jacob.png',
   },
   {
     description:
       'Working with Lumina Spark Foundation on their medical outreach program has been incredibly rewarding. Their dedication to improving healthcare access in remote areas is inspiring, and together we have been able to provide essential medical services to those who need it most.',
     name: 'Dr. Michael Adisa',
     role: 'Healthcare Partner, Nigeria',
-    img: '/public/micheal.png',
+    img: '/micheal.png',
   },
   {
     description:
       'Our partnership with Lumina Spark Foundation has empowered countless women in our region. By combining our resources and expertise, we have been able to provide vocational training and support that has transformed lives and strengthened our communities.',
     name: 'Mary Okeke',
     role: 'Women’s Cooperative Leader, Ghana',
-    img: '/public/mary.png',
+    img: '/mary.png',
   },
   {
     description:
       "Lumina Spark Foundation's holistic approach to community development aligns perfectly with our mission. We are proud to support their initiatives, which have demonstrated significant impact in improving the quality of life for many underserved populations in Africa.",
     name: 'Jane Wilson',
     role: 'Development Partner, USAID',
-    img: '/public/lane.png',
+    img: '/lane.png',
   },
   {
     description:
       'Funding Lumina Spark Foundation’s educational programs has been a deeply fulfilling experience. Their commitment to providing quality education and digital skills to youths is creating a ripple effect of positive change across communities.',
     name: 'David Liu',
     role: 'Funding Partner, Global Education Fund',
-    img: '/public/david.png',
+    img: '/david.png',
   },
   {
     description:
       'Lumina Spark Foundation has been an exemplary partner in our efforts to improve living standards in rural areas. Their projects in healthcare and basic amenities have complemented our governmental initiatives and helped us reach more people effectively.',
     name: 'Akintunde Akinleye',
     role: 'Minister of Health, Nigeria',
-    img: '/public/akintunde.png',
+    img: '/akintunde.png',
   },
   {
     description:
       'The collaborative efforts with Lumina Spark Foundation have significantly contributed to our community development goals. Their programs in shelter provision and food security have addressed critical needs and have been instrumental in our fight against poverty and hunger.',
     name: 'Robert John',
     role: 'Regional Development Coordinator, Kenya',
-    img: '/public/robert.png',
+    img: '/robert.png',
   },
 ])
 const currentIndex = ref(0)
@@ -92,7 +92,7 @@ import { ref } from 'vue'
   <div class="container">
     <div class="testimonialSec">
       <div class="">
-        <img src="/public/aboutQuote.png" alt="" />
+        <img src="/aboutQuote.png" alt="" />
       </div>
       <p class="testimony">{{ slides[currentIndex].description }}</p>
       <div class="details">

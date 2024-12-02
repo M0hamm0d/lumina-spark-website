@@ -13,7 +13,7 @@ const handleClick = id => emit('toggleAnswer', id)
       <p class="icon">{{ faq.isOpen ? '-' : '+' }}</p>
     </div>
     <div v-if="faq.isOpen" class="content-box">
-      {{ faq.text }}
+      {{ faq.description }}
     </div>
   </div>
 </template>

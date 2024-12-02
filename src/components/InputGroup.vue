@@ -1,5 +1,5 @@
 <script setup>
-import sendMessage from '../../public/send-message.png'
+import sendMessage from '/send-message.png'
 </script>
 <template>
   <div class="container">

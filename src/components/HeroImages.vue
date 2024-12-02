@@ -1,8 +1,8 @@
 <script setup>
 const images = [
-  { image: '/public/img-first.png' },
-  { image: '/public/img-second.png' },
-  { image: '/public/img-third.png' },
+  { image: '/img-first.png' },
+  { image: '/img-second.png' },
+  { image: '/img-third.png' },
 ]
 </script>
 <template>
@@ -10,7 +10,7 @@ const images = [
     <img
       v-for="(img, index) in images"
       :key="index"
-      :image="img.image"
+      :src="img.image"
       alt="File icon"
     />
   </div>

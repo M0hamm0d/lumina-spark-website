@@ -1,30 +1,33 @@
 <script setup>
 const data = [
   {
-    no: '50,000+',
+    reach: '50,000+',
     header: 'Lives Touched',
-    text: 'We have provided free healthcare services to over 50,000 individualsin remote and underserved areas.',
+    description:
+      'We have provided free healthcare services to over 50,000 individualsin remote and underserved areas.',
   },
   {
-    no: '$5million',
+    reach: '$5million',
     header: 'Donation Raised',
-    text: 'We have raised over 5 Million Dollars donation and funding from International NGOs and civil society groups to drive meaningful change and promote sustainable development.',
+    description:
+      'We have raised over 5 Million Dollars donation and funding from International NGOs and civil society groups to drive meaningful change and promote sustainable development.',
   },
   {
-    no: '10,000',
+    reach: '10,000',
     header: 'Women Empowered',
-    text: 'We have trained and supported 10,000 women, helping them gain financial independence and become active contributors to their local economies. Through vocational training and access to micro-loans, we have enabled women to launch successful enterprises and improve their livelihoods.',
+    description:
+      'We have trained and supported 10,000 women, helping them gain financial independence and become active contributors to their local economies. Through vocational training and access to micro-loans, we have enabled women to launch successful enterprises and improve their livelihoods.',
   },
 ]
 </script>
 <template>
   <div class="metric-card">
     <div v-for="(item, index) of data" :key="index" :class="`card${index + 1}`">
-      <h1>{{ item.no }}</h1>
+      <h1>{{ item.reach }}</h1>
       <div>
         <h4>{{ item.header }}</h4>
         <p>
-          {{ item.text }}
+          {{ item.description }}
         </p>
       </div>
     </div>

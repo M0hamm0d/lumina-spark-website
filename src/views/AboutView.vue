@@ -1,12 +1,12 @@
 <script setup>
-import aboutHeroImg from '../../public/HeroLandscapeImageContainer.png'
-import imgOverlay from '../../public/img-overlay.png'
+import aboutHeroImg from '/HeroLandscapeImageContainer.png'
+import imgOverlay from '/img-overlay.png'
 import TheButton from '@/components/TheButton.vue'
-import mission from '../../public/mission.png'
-import vision from '../../public/vision.png'
-import quote from '../../public/quote.png'
-import founder from '../../public/founder.png'
-import teamGroup from '../../public/team-group-pics.png'
+import mission from '/mission.png'
+import vision from '/vision.png'
+import quote from '/quote.png'
+import founder from '/founder.png'
+import teamGroup from '/team-group-pics.png'
 import GetInvolved from '@/components/GetInvolved.vue'
 import TheHeaders from '@/components/TheHeaders.vue'
 import staffRoles from '@/components/staffRoles.vue'
@@ -40,7 +40,7 @@ import TheCarousel from '@/components/TheCarousel.vue'
       </div>
       <div class="bottom-sec">
         <div class="mission-sec">
-          <MissionAndVision logo="../../public/missionLogo.png">
+          <MissionAndVision logo="/missionLogo.png">
             <template v-slot:header>Mission</template>
             <template v-slot:text>
               To empower and uplift the most vulnerable populations in Africa by
@@ -51,7 +51,7 @@ import TheCarousel from '@/components/TheCarousel.vue'
         </div>
         <div class="vision-sec">
           <img :src="vision" alt="img" />
-          <MissionAndVision logo="../../public/visionLogo.png">
+          <MissionAndVision logo="/visionLogo.png">
             <template v-slot:header>Vision</template>
             <template v-slot:text>
               To see a transformed Africa where every individual, regardless of

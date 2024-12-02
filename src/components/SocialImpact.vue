@@ -2,29 +2,29 @@
 import OurPartners from './OurPartners.vue'
 const metricCard = [
   {
-    src: '../../public/sustain.png',
-    h1: '$5M',
-    text: 'Funding Raised',
+    image: '/sustain.png',
+    heder: '$5M',
+    description: 'Funding Raised',
   },
   {
-    src: '../../public/volunteer.png',
-    h1: '1000+',
-    text: 'Volunteers Engaged',
+    image: '/volunteer.png',
+    heder: '1000+',
+    description: 'Volunteers Engaged',
   },
   {
-    src: '../../public/trained.png',
-    h1: '20,000',
-    text: 'Youth Trained',
+    image: '/trained.png',
+    heder: '20,000',
+    description: 'Youth Trained',
   },
   {
-    src: '../../public/shelter.png',
-    h1: '5000',
-    text: 'Safe Shelter Provider',
+    image: '/shelter.png',
+    heder: '5000',
+    description: 'Safe Shelter Provider',
   },
   {
-    src: '../../public/sustain.png',
-    h1: '50+',
-    text: 'Sustainable Project',
+    image: '/sustain.png',
+    heder: '50+',
+    description: 'Sustainable Project',
   },
 ]
 </script>
@@ -36,10 +36,10 @@ const metricCard = [
         :key="index"
         class="si-metric-card"
       >
-        <img :src="item.src" alt="File icon" />
+        <img :src="item.image" alt="File icon" />
         <div>
-          <h1>{{ item.h1 }}</h1>
-          <p>{{ item.text }}</p>
+          <h1>{{ item.heder }}</h1>
+          <p>{{ item.description }}</p>
         </div>
       </div>
     </div>

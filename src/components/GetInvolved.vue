@@ -3,8 +3,7 @@ import TheHeaders from './TheHeaders.vue'
 </script>
 <template>
   <div class="container">
-    <TheHeaders width="714px" font-weight-value="500">
-      <template v-slot:header>GET INVOLVED</template>
+    <TheHeaders width="714px" font-weight-value="500" header="GET INVOLVED">
       <template v-slot:text-body
         >We are stronger together! There are many ways you can contribute to
         Lumina Spark Foundation&apos;s mission:</template
