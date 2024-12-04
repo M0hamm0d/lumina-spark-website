@@ -63,7 +63,6 @@ import TheCarousel from '@/components/TheCarousel.vue'
       </div>
     </div>
   </div>
-  <!-- ACCORDION -->
   <div class="accordion-container">
     <div class="acc-left-text">
       <h2>
