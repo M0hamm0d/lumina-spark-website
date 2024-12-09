@@ -247,4 +247,6 @@ a {
   gap: 32px;
   padding: 50px 100px;
 }
+@media (min-width: 700px) and (max-width: 950px) {
+}
 </style>
