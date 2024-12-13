@@ -89,4 +89,12 @@ const cards = [
 .head p {
   font-size: 14px;
 }
+@media (max-width: 700px) {
+  .initiative-cards {
+    grid-template-columns: 1fr;
+  }
+  .initiative-card img {
+    width: 100%;
+  }
+}
 </style>

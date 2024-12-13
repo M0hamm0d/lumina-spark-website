@@ -118,7 +118,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 930px;
+  max-width: 930px;
   margin: 0 auto;
 }
 .hero-container {
@@ -135,7 +135,7 @@ a {
   gap: 12px;
   border: 1px solid #d0c4c0;
   border-radius: 1000px;
-  width: 411px;
+  max-width: 411px;
   margin: 0 auto;
   cursor: pointer;
 }
@@ -247,9 +247,25 @@ a {
   gap: 32px;
   padding: 50px 100px;
 }
-@media (min-width: 700px) and (max-width: 950px) {
-  a {
-    color: yellow;
+.image-container img {
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .hero-title {
+    font-size: 18px;
+  }
+  .about-us-section {
+    flex-direction: column;
+    padding: 25px 50px;
+  }
+  .image-container img {
+    width: 100%;
+  }
+  .our-initiative {
+    padding: 25px 50px;
+  }
+  .ongoing-camp-container {
+    padding: 25px 50px;
   }
 }
 </style>

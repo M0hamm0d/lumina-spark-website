@@ -7,7 +7,7 @@ defineProps(['width', 'classes', 'fontWeightValue', 'header', 'optionalSlot'])
       {{ header }}
       <slot name="header"></slot>
     </h3>
-    <div :style="{ width: width }">
+    <div :style="{ maxWidth: width }">
       <h3>
         {{ optionalSlot }}
         <slot name="optional-slot"></slot>

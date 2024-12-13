@@ -16,7 +16,7 @@ const partners = [
 </template>
 <style scoped>
 .container {
-  width: 886.25px;
+  max-width: 886.25px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -27,5 +27,11 @@ const partners = [
 .partners img:hover {
   opacity: 1;
   transition: 0.5s;
+}
+@media (max-width: 700px) {
+  .container {
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 </style>

@@ -142,6 +142,9 @@ a {
   font-size: 17px;
   font-weight: 600;
 }
+.ongoing-fundraising-small-card img {
+  width: 100%;
+}
 .ongoing-fundraising-big-card > div > div p {
   font-size: 14px;
   line-height: 20px;
@@ -179,5 +182,16 @@ a {
   width: fit-content;
   display: flex;
   align-items: center;
+}
+@media (max-width: 700px) {
+  .ongoing-fundraising-bottom {
+    flex-direction: column;
+  }
+  .ongoing-fundraising-right-sec {
+    grid-template-columns: 1fr;
+  }
+  .cta img {
+    width: 100%;
+  }
 }
 </style>

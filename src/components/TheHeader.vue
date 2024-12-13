@@ -86,4 +86,9 @@ a {
   color: white;
   cursor: pointer;
 }
+@media (max-width: 700px) {
+  .header-nav {
+    display: none;
+  }
+}
 </style>
