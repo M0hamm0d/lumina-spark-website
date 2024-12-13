@@ -21,4 +21,9 @@ const images = [
   display: flex;
   gap: 16px;
 }
+@media (max-width: 700px) {
+  .hero-images {
+    flex-direction: column;
+  }
+}
 </style>

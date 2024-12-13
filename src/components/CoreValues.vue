@@ -41,4 +41,9 @@ const images = [
   color: #390e00;
   align-items: center;
 }
+@media (max-width: 700px) {
+  .descriptors {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

@@ -199,4 +199,9 @@ a {
   align-items: center;
   gap: 3px;
 }
+@media (max-width: 700px) {
+  /* footer {
+    display: none;
+  } */
+}
 </style>

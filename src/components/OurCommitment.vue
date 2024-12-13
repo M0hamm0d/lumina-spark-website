@@ -80,4 +80,12 @@ const cards = [
 .card img {
   width: 88px;
 }
+@media (max-width: 700px) {
+  .commitment-section {
+    padding: 25px 50px;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
