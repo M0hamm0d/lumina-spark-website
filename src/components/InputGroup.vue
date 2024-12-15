@@ -149,5 +149,8 @@ import sendMessage from '/send-message.png'
   gap: 10px;
 }
 @media (max-width: 700px) {
+  .inputSec {
+    flex-direction: column;
+  }
 }
 </style>

@@ -200,5 +200,8 @@ a {
   gap: 3px;
 }
 @media (max-width: 700px) {
+  .top-footer {
+    flex-direction: column;
+  }
 }
 </style>
