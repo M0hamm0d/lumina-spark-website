@@ -82,7 +82,7 @@ const cards = [
 }
 @media (max-width: 700px) {
   .commitment-section {
-    padding: 25px 50px;
+    padding: 25px;
   }
   .card-container {
     grid-template-columns: 1fr;

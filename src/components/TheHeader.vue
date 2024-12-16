@@ -91,7 +91,7 @@ a {
     display: none;
   }
   .header {
-    padding: 25px 50px;
+    padding: 25px;
     display: none;
   }
 }

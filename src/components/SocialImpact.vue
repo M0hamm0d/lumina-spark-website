@@ -103,7 +103,10 @@ const metricCard = [
     align-items: center;
   }
   .social-impact-wrapper {
-    padding: 25px 50px;
+    padding: 25px;
+  }
+  .si-metric-card:not(:last-child) {
+    border-right: none;
   }
 }
 </style>

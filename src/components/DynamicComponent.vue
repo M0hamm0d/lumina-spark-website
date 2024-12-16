@@ -44,7 +44,7 @@ const tabModules = [
 </template>
 <style scoped>
 .tabs {
-  padding: 50px 100px;
+  padding: 25px;
   display: flex;
   gap: 8px;
   background-color: #ffdbb5;
@@ -71,7 +71,7 @@ const tabModules = [
   color: #fffbf8;
 }
 .ourProgramCategory {
-  padding: 50px 100px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   gap: 24px;
