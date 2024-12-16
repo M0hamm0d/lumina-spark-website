@@ -184,7 +184,7 @@ a {
   background-color: #df3800;
 }
 .mission-and-vision {
-  padding: 50px 100px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -220,7 +220,7 @@ a {
   gap: 16px;
 }
 .accordion-container {
-  padding: 0 100px 50px;
+  padding: 25px 50px;
   display: flex;
   justify-content: space-between;
   background-color: #fffbf8;
@@ -254,7 +254,7 @@ a {
   letter-spacing: 0.25px;
 }
 .founder-speech {
-  padding: 50px 100px;
+  padding: 25px;
   justify-content: space-between;
   display: flex;
   background-color: #ffd4ba;
@@ -294,7 +294,7 @@ a {
   font-size: 16px;
 }
 .our-team-container {
-  padding: 50px 100px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -309,7 +309,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 50px 100px;
+  padding: 25px;
   background-color: #fffbf8;
 }
 .about-team {

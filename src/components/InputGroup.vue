@@ -68,7 +68,7 @@ import sendMessage from '/send-message.png'
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 408px;
+  max-width: 408px;
 }
 .descriptionHeader h3 {
   font-size: 32px;
@@ -112,6 +112,9 @@ import sendMessage from '/send-message.png'
   justify-content: flex-start;
   font-size: 16px;
 }
+.label textarea {
+  resize: none;
+}
 .leftSection form {
   display: flex;
   flex-direction: column;
@@ -149,8 +152,12 @@ import sendMessage from '/send-message.png'
   gap: 10px;
 }
 @media (max-width: 700px) {
-  /* .container {
-    display: none;
-  } */
+  .container,
+  .contact {
+    padding: 25px;
+  }
+  .inputSec {
+    flex-direction: column;
+  }
 }
 </style>

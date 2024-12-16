@@ -32,6 +32,11 @@ const partners = [
   .container {
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .container img {
+    width: 80%;
   }
 }
 </style>

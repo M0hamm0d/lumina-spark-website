@@ -247,25 +247,22 @@ a {
   gap: 32px;
   padding: 50px 100px;
 }
-.image-container img {
-  width: 100%;
-}
 @media (max-width: 700px) {
   .hero-title {
     font-size: 18px;
   }
   .about-us-section {
     flex-direction: column;
-    padding: 25px 50px;
+    padding: 25px;
   }
   .image-container img {
     width: 100%;
   }
   .our-initiative {
-    padding: 25px 50px;
+    padding: 25px;
   }
   .ongoing-camp-container {
-    padding: 25px 50px;
+    padding: 25px;
   }
 }
 </style>

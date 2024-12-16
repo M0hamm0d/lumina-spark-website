@@ -13,8 +13,8 @@ import locationLogo from '/location-logo.png'
   <footer class="">
     <div className="top-footer">
       <div className="about-lumina">
-        <div>
-          <img :src="logo" alt="File icon" />
+        <div class="">
+          <img :src="logo" alt="File icon" class="footer-logo" />
           <p>
             We provide vital healthcare, education, and shelter to Africa&apos;s
             most vulnerable populations.
@@ -139,7 +139,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   gap: 24px;
-  width: 366px;
+  max-width: 366px;
 }
 .about-lumina > :first-child {
   gap: 16px;
@@ -200,8 +200,23 @@ a {
   gap: 3px;
 }
 @media (max-width: 700px) {
-  /* footer {
-    display: none;
-  } */
+  .top-footer {
+    flex-direction: column;
+    padding: 25px;
+    gap: 30px;
+  }
+  .footer-logo {
+    width: 250px;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .footer-btn {
+    padding: 25px;
+    flex-direction: column;
+  }
+  .social-account > div {
+    padding: 12px;
+  }
 }
 </style>

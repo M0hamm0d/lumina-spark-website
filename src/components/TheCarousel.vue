@@ -119,7 +119,7 @@ import { ref } from 'vue'
 </template>
 <style scoped>
 .container {
-  padding: 50px 100px;
+  padding: 25px;
   background-color: #fffbf8;
 }
 .testimonialSec {

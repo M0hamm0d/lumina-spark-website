@@ -155,7 +155,7 @@ const data = [
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 50px 100px 0;
+  padding: 25px 0;
 }
 .header h1 {
   font-size: 28px;
@@ -285,7 +285,7 @@ const data = [
   gap: 16px;
 }
 .container {
-  padding: 50px 100px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   gap: 24px;

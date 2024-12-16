@@ -90,5 +90,9 @@ a {
   .header-nav {
     display: none;
   }
+  .header {
+    padding: 25px;
+    display: none;
+  }
 }
 </style>

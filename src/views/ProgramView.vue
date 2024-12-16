@@ -26,7 +26,7 @@ import DynamicComponent from '@/components/DynamicComponent.vue'
 
 <style scoped>
 .hero-section-container {
-  padding: 50px 100px 0px;
+  padding: 25px 0px;
   background-color: #fffbf8;
   display: flex;
   flex-direction: column;
