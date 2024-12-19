@@ -119,7 +119,7 @@ import { ref } from 'vue'
 </template>
 <style scoped>
 .container {
-  padding: 25px;
+  padding: 50px 100px;
   background-color: #fffbf8;
 }
 .testimonialSec {
@@ -129,14 +129,14 @@ import { ref } from 'vue'
   position: relative;
 }
 .testimony {
-  width: 822px;
+  max-width: 822px;
   font-size: 24px;
   line-height: 32px;
 }
 .btnControl {
   position: absolute;
   bottom: 0;
-  right: 0;
+  /* right: 0; */
   z-index: 10;
   display: flex;
   align-items: center;
@@ -177,5 +177,28 @@ import { ref } from 'vue'
 .active {
   background-color: #514440;
   width: 24px;
+}
+@media (min-width: 700px) {
+  .btnControl {
+    right: 0%;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 25px;
+  }
+  .testimony {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .testimonialSec {
+    gap: 40px;
+  }
+  .btnControl {
+    top: 50%;
+    left: 50%;
+    /* top: 0; */
+    transform: translate(-50%, 70%);
+  }
 }
 </style>

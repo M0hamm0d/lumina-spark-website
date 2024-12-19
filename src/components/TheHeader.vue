@@ -5,7 +5,7 @@ import dropdown from '/dropdown.png'
 </script>
 <template>
   <header class="header">
-    <div>
+    <div class="header-logo">
       <RouterLink to="/">
         <img :src="logo" alt="" />
       </RouterLink>
@@ -30,6 +30,19 @@ import dropdown from '/dropdown.png'
         <RouterLink to="/blog" class="nav">Blogs</RouterLink>
       </li>
     </ul>
+    <div class="mobile-nav">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#5f6368"
+      >
+        <path
+          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+        />
+      </svg>
+    </div>
     <RouterLink class="nav">
       <a href="#ongoing-fundraising" v-smooth-scroll class="changeLife"
         >Change A Life</a
@@ -38,6 +51,9 @@ import dropdown from '/dropdown.png'
   </header>
 </template>
 <style scoped>
+.mobile-nav {
+  display: none;
+}
 a {
   text-decoration: none;
   display: flex;
@@ -54,6 +70,9 @@ a {
   border-bottom: 1px solid #f0eded;
   color: #fffbfb;
   background-color: #fffbf8;
+}
+.header-logo img {
+  width: 100%;
 }
 .nav {
   color: black;
@@ -92,6 +111,9 @@ a {
   }
   .header {
     padding: 25px;
+    align-items: center;
+  }
+  .nav {
     display: none;
   }
 }

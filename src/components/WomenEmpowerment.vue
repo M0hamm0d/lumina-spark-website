@@ -28,7 +28,7 @@
             </div>
             <div>
               <div class="logo">
-                <img src="/money.png" alt="img" />
+                <img src="/Money.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="stat">
-          <img src="/growth.png" alt="growth" />
+          <img src="/Growth.png" alt="growth" />
           <p>
             Over 10,000 women trained and supported to build successful business
             startups.
