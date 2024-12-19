@@ -141,8 +141,14 @@
   align-items: center;
 }
 .bottomSec {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+  width: 100%;
+}
+.bottomSec > img {
+  width: 100%;
 }
 .topBody > img {
   width: 100%;

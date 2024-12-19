@@ -141,4 +141,15 @@
   display: flex;
   gap: 16px;
 }
+@media (max-width: 700px) {
+  .topHeader {
+    width: 100%;
+  }
+  .topBody {
+    flex-direction: column;
+  }
+  .bottomSec {
+    display: none;
+  }
+}
 </style>

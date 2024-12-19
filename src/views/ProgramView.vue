@@ -26,7 +26,7 @@ import DynamicComponent from '@/components/DynamicComponent.vue'
 
 <style scoped>
 .hero-section-container {
-  padding: 25px 0px;
+  padding: 50px 100px;
   background-color: #fffbf8;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,15 @@ import DynamicComponent from '@/components/DynamicComponent.vue'
   display: flex;
   flex: 1;
 }
+@media (max-width: 10250px) {
+  .hero-section-container {
+    padding: 50px;
+  }
+}
 @media (max-width: 700px) {
+  .hero-section-container {
+    padding: 25px;
+  }
   .title-and-desc {
     flex-direction: column;
     gap: 20px;

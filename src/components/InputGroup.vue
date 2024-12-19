@@ -151,6 +151,11 @@ import sendMessage from '/send-message.png'
   justify-content: center;
   gap: 10px;
 }
+@media (max-width: 1025px) {
+  .container {
+    padding: 50px;
+  }
+}
 @media (max-width: 700px) {
   .container,
   .contact {
