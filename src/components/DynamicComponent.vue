@@ -77,4 +77,12 @@ const tabModules = [
   gap: 24px;
   background-color: #fffbf8;
 }
+@media (max-width: 700px) {
+  .tabs {
+    flex-wrap: wrap;
+  }
+  .tab {
+    padding: 8px 12px;
+  }
+}
 </style>
