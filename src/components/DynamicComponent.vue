@@ -44,7 +44,7 @@ const tabModules = [
 </template>
 <style scoped>
 .tabs {
-  padding: 25px;
+  padding: 50px 100px;
   display: flex;
   gap: 8px;
   background-color: #ffdbb5;
@@ -71,11 +71,19 @@ const tabModules = [
   color: #fffbf8;
 }
 .ourProgramCategory {
-  padding: 25px;
+  padding: 50px 100px;
   display: flex;
   flex-direction: column;
   gap: 24px;
   background-color: #fffbf8;
+}
+@media (max-width: 1025px) {
+  .tabs {
+    padding: 50px;
+  }
+  .ourProgramCategory {
+    padding: 50px;
+  }
 }
 @media (max-width: 700px) {
   .tabs {
@@ -83,6 +91,9 @@ const tabModules = [
   }
   .tab {
     padding: 8px 12px;
+  }
+  .ourProgramCategory {
+    padding: 25px;
   }
 }
 </style>

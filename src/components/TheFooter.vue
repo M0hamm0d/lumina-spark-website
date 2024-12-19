@@ -199,6 +199,17 @@ a {
   align-items: center;
   gap: 3px;
 }
+@media (max-width: 1025px) {
+  .top-footer,
+  .footer-btn {
+    padding: 50px;
+  }
+}
+@media (max-width: 940px) {
+  .top-footer {
+    gap: 70px;
+  }
+}
 @media (max-width: 700px) {
   .top-footer {
     flex-direction: column;
