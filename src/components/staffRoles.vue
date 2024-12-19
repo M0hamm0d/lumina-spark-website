@@ -111,7 +111,7 @@ const card = [
   gap: 16px;
 }
 .bottom-card {
-  width: 806px;
+  max-width: 806px;
   margin: auto;
 }
 .card {
@@ -149,5 +149,14 @@ const card = [
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media (max-width: 700px) {
+  .top-card,
+  .bottom-card {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 30px;
+  }
 }
 </style>

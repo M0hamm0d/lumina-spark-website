@@ -82,4 +82,16 @@ const data = [
   letter-spacing: 0.5%;
   line-height: 16px;
 }
+@media (max-width: 700px) {
+  .metric-card {
+    grid-template-columns: 1fr;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+  }
+}
 </style>

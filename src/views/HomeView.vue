@@ -248,6 +248,15 @@ a {
   padding: 50px 100px;
 }
 @media (max-width: 700px) {
+  .hero-container {
+    padding: 25px;
+  }
+  .new-features {
+    font-size: 13px;
+  }
+  .hero-section {
+    padding: 25px 0;
+  }
   .hero-title {
     font-size: 18px;
   }

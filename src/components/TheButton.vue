@@ -19,4 +19,9 @@ defineProps(['href', 'body'])
   align-items: end;
   text-decoration: none;
 }
+@media (max-width: 700px) {
+  .button {
+    padding: 10px 15px;
+  }
+}
 </style>

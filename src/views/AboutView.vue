@@ -112,7 +112,7 @@ import TheCarousel from '@/components/TheCarousel.vue'
           impact.</template
         >
       </TheHeaders>
-      <img :src="teamGroup" alt="img" />
+      <img :src="teamGroup" alt="img" class="teamGroup" />
     </div>
     <staffRoles />
   </div>
@@ -153,7 +153,7 @@ a {
   right: 0;
 }
 .hero-text {
-  width: 930px;
+  max-width: 930px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -184,7 +184,7 @@ a {
   background-color: #df3800;
 }
 .mission-and-vision {
-  padding: 25px;
+  padding: 50px 100px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -206,7 +206,7 @@ a {
   text-align: center;
   font-size: 32px;
   line-height: 40px;
-  width: 740px;
+  max-width: 740px;
   margin: auto;
 }
 .bottom-sec {
@@ -220,7 +220,7 @@ a {
   gap: 16px;
 }
 .accordion-container {
-  padding: 25px 50px;
+  padding: 50px 100px;
   display: flex;
   justify-content: space-between;
   background-color: #fffbf8;
@@ -229,7 +229,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 441px;
+  max-width: 441px;
 }
 .acc-left-text h2 {
   font-weight: 500;
@@ -246,7 +246,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 457px;
+  max-width: 457px;
 }
 .acc-right-sec > p {
   font-size: 14px;
@@ -254,13 +254,13 @@ a {
   letter-spacing: 0.25px;
 }
 .founder-speech {
-  padding: 25px;
+  padding: 50px 100px;
   justify-content: space-between;
   display: flex;
   background-color: #ffd4ba;
 }
 .left-sec {
-  width: 715px;
+  max-width: 715px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -294,7 +294,7 @@ a {
   font-size: 16px;
 }
 .our-team-container {
-  padding: 25px;
+  padding: 50px 100px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -309,7 +309,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 25px;
+  padding: 50px 100px;
   background-color: #fffbf8;
 }
 .about-team {
@@ -318,5 +318,52 @@ a {
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.15px;
+}
+@media (max-width: 700px) {
+  .our-impact-container,
+  .our-team-container {
+    padding: 25px;
+  }
+  .hero-text h1 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .get-started {
+    padding: 10px 15px;
+  }
+  .top-sec p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .top-section img {
+    width: 100%;
+  }
+  .mission-sec,
+  .vision-sec {
+    flex-direction: column;
+  }
+  .mission-sec > img,
+  .vision-sec > img {
+    display: none;
+  }
+  .accordion-container {
+    gap: 15px;
+  }
+  .accordion-container,
+  .mission-and-vision {
+    padding: 25px;
+    flex-direction: column;
+  }
+  .founder-speech {
+    flex-direction: column;
+    padding: 25px;
+  }
+  .heading-block {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  .left-sec .bottom {
+    gap: 10px;
+  }
 }
 </style>

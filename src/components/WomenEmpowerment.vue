@@ -3,7 +3,7 @@
   <div class="topSection">
     <div class="topHeader">Women Empowerment</div>
     <div class="topBody">
-      <img src="../../women-1.png" alt="img" />
+      <img src="/women-1.png" alt="img" />
       <div class="bodyRight">
         <p>
           We believe that empowering women is key to fostering sustainable
@@ -16,7 +16,7 @@
           <div class="initiative">
             <div>
               <div class="logo">
-                <img src="../../initiative1.png" alt="img" />
+                <img src="/initiative1.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -28,7 +28,7 @@
             </div>
             <div>
               <div class="logo">
-                <img src="../../money.png" alt="img" />
+                <img src="/Money.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -40,7 +40,7 @@
             </div>
             <div>
               <div class="logo">
-                <img src="../../mentorship.png" alt="img" />
+                <img src="/mentorship.png" alt="img" />
               </div>
               <div class="paragraph">
                 <p>
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="stat">
-          <img src="../../growth.png" alt="growth" />
+          <img src="/Growth.png" alt="growth" />
           <p>
             Over 10,000 women trained and supported to build successful business
             startups.
@@ -63,10 +63,10 @@
     </div>
   </div>
   <div class="bottomSec">
-    <img src="../../women2.png" alt="growth" />
-    <img src="../../women3.png" alt="growth" />
-    <img src="../../women4.png" alt="growth" />
-    <img src="../../women5.png" alt="growth" />
+    <img src="/women2.png" alt="growth" />
+    <img src="/women3.png" alt="growth" />
+    <img src="/women4.png" alt="growth" />
+    <img src="/women5.png" alt="growth" />
   </div>
 </template>
 <style scoped>

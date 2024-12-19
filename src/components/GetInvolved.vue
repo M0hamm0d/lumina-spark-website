@@ -92,4 +92,12 @@ import TheHeaders from './TheHeaders.vue'
   line-height: 16px;
   letter-spacing: 0.5px;
 }
+@media (max-width: 700px) {
+  .container {
+    padding: 70px 25px 25px;
+  }
+  .getInvolveCards {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

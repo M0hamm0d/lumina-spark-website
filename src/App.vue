@@ -2,12 +2,20 @@
 import { RouterView } from 'vue-router'
 import TheHeader from './components/TheHeader.vue'
 import TheFooter from './components/TheFooter.vue'
+import MobileMenu from './components/MobileMenu.vue'
 </script>
 
 <template>
-  <TheHeader />
-  <RouterView />
-  <TheFooter />
+  <div class="container">
+    <MobileMenu />
+    <TheHeader />
+    <RouterView />
+    <TheFooter />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.container {
+  position: relative;
+}
+</style>
