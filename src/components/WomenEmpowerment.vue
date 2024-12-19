@@ -144,4 +144,21 @@
   display: flex;
   gap: 16px;
 }
+.topBody > img {
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .topBody {
+    flex-direction: column;
+  }
+  .topBody > img {
+    width: 100%;
+  }
+  .topHeader {
+    width: 100%;
+  }
+  .bottomSec {
+    display: none;
+  }
+}
 </style>
