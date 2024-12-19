@@ -88,6 +88,7 @@ const tabModules = [
 @media (max-width: 700px) {
   .tabs {
     flex-wrap: wrap;
+    padding: 25px;
   }
   .tab {
     padding: 8px 12px;
