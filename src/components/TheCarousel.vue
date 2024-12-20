@@ -190,7 +190,7 @@ import { ref } from 'vue'
 }
 @media (max-width: 700px) {
   .container {
-    padding: 25px;
+    padding: 25px 25px 75px;
   }
   .testimony {
     font-size: 20px;

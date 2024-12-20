@@ -27,7 +27,7 @@ const data = [
     body: 'Take Aisha, for example. After participating in our vocational training and receiving a micro-loan, she launched a tailoring business in her community in Kenya.',
   },
   {
-    img: '/blogHero3.png',
+    img: '/shelter2.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Shelter and Food',
@@ -35,7 +35,7 @@ const data = [
     body: 'One success story is Emmanuel, who, after losing his home, found refuge in our shelter. With the support of our programs, he secured employment and moved into his own apartment within six months.',
   },
   {
-    img: '/blogHero3.png',
+    img: '/solar2.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Water and Solar Energy',
@@ -43,7 +43,7 @@ const data = [
     body: 'In rural Tanzania, we recently completed a project that brought clean drinking water to a village of 3,000 people. Prior to this, residents had to walk miles to access water, which was often contaminated.',
   },
   {
-    img: '/blogHero3.png',
+    img: '/education3.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Education',
@@ -51,7 +51,7 @@ const data = [
     body: 'Tone inspiring story is that of Mary, a young girl from Uganda. With the support of our scholarship program, she was able to complete her secondary education and is now pursuing a degree in engineering.',
   },
   {
-    img: '/blogHero3.png',
+    img: '/education5.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Education',
@@ -157,6 +157,9 @@ const data = [
   gap: 32px;
   padding: 25px 0;
 }
+.header {
+  padding-left: 100px;
+}
 .header h1 {
   font-size: 28px;
   line-height: 36px;
@@ -168,7 +171,7 @@ const data = [
   font-weight: 500;
 }
 .header-body {
-  padding-bottom: 50px;
+  padding: 50px 100px;
   border-bottom: 1px solid #e5e2e1;
   display: flex;
   gap: 16px;
@@ -285,10 +288,37 @@ const data = [
   gap: 16px;
 }
 .container {
-  padding: 25px;
+  padding: 50px 100px;
   display: flex;
   flex-direction: column;
   gap: 24px;
   background-color: #fffbf8;
+}
+@media (max-width: 1025px) {
+  .hero-container,
+  .container {
+    padding: 50px;
+  }
+  .header-body {
+    padding: 0;
+  }
+}
+@media (max-width: 700px) {
+  .hero-container,
+  .container {
+    padding: 25px;
+  }
+  .header-body {
+    flex-direction: column;
+  }
+  .right1 {
+    flex-direction: column;
+  }
+  .header {
+    padding-left: 0px;
+  }
+  .header-body {
+    padding: 0;
+  }
 }
 </style>

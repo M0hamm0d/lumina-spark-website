@@ -139,8 +139,12 @@
   align-items: center;
 }
 .bottomSec {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+}
+.bottomSec > img {
+  width: 100%;
 }
 @media (max-width: 700px) {
   .topHeaders {
