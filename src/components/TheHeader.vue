@@ -105,7 +105,7 @@ a {
   color: white;
   cursor: pointer;
 }
-@media (max-width: 10250px) {
+@media (max-width: 1025px) {
   .header {
     padding: 50px;
   }

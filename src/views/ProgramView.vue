@@ -62,14 +62,7 @@ import DynamicComponent from '@/components/DynamicComponent.vue'
   }
   .title-and-desc .h1 {
     font-size: 25px;
-    line-height: 1.5;
-    padding: 0 25px;
-  }
-  .p {
-    padding: 0px 25px;
-  }
-  .hero-section-container > img {
-    padding: 0 25px;
+    line-height: 1.3;
   }
 }
 </style>
