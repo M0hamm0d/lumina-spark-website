@@ -18,12 +18,15 @@ setInterval(() => {
 </script>
 <template>
   <div class="hero-images">
-    <img
+    <div class="" v-for="(img, index) in images" :key="index">
+      <img :src="img.image" alt="File icon" />
+    </div>
+    <!-- <img
       v-for="(img, index) in images"
       :key="index"
       :src="img.image"
       alt="File icon"
-    />
+    /> -->
   </div>
   <div class="hero-images mobile">
     <img :src="images[currentIndex].image" alt="File icon" />
@@ -36,6 +39,7 @@ setInterval(() => {
   gap: 16px;
   width: 100%;
 }
+
 .hero-images img {
   width: 100%;
 }

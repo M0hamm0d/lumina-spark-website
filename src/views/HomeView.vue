@@ -56,7 +56,9 @@ import CoreValues from '@/components/CoreValues.vue'
       <RouterLink to="/about" class="button">Learn More</RouterLink>
     </div>
     <div class="image-container">
-      <img src="/about-us.png" alt="File icon" />
+      <div class="">
+        <img src="/about-us.png" alt="File icon" />
+      </div>
       <div class="pause-btn">
         <img src="/pause.png" alt="File icon" />
       </div>
@@ -188,6 +190,7 @@ a {
   display: flex;
   background-color: #df3800;
   color: white;
+  height: 100%;
 }
 .about-us-desc {
   display: flex;
@@ -226,6 +229,12 @@ a {
 }
 .image-container {
   position: relative;
+  width: 100%;
+  height: 100%;
+}
+.image-container div:first-child {
+  width: 100%;
+  height: 100%;
 }
 .pause-btn {
   position: absolute;
@@ -246,6 +255,9 @@ a {
   flex-direction: column;
   gap: 32px;
   padding: 50px 100px;
+}
+.image-container img {
+  width: 100%;
 }
 @media (max-width: 700px) {
   .hero-container {
