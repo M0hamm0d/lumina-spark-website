@@ -207,7 +207,24 @@ a {
 }
 @media (max-width: 940px) {
   .top-footer {
-    gap: 70px;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    padding: 35px;
+  }
+  .about-lumina {
+    flex: 3;
+    gap: 15px;
+    width: 100%;
+  }
+  .info {
+    flex: 2;
+    gap: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .about-lumina > div:first-child {
+    width: 100%;
   }
 }
 @media (max-width: 700px) {

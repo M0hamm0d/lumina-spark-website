@@ -259,7 +259,24 @@ a {
 .image-container img {
   width: 100%;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+  .hero,
+  .our-initiative,
+  .ongoing-camp-container {
+    padding: 35px;
+  }
+  .hero {
+    padding-top: 0;
+  }
+  .hero-title {
+    font-size: 25px;
+    line-height: 1.1;
+  }
+  .about-us-section {
+    padding: 35px;
+  }
+}
+@media (max-width: 750px) {
   .hero-container {
     padding: 25px;
   }
@@ -284,6 +301,11 @@ a {
   }
   .ongoing-camp-container {
     padding: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .hero-container {
+    padding: 0;
   }
 }
 </style>

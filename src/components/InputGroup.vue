@@ -156,6 +156,12 @@ import sendMessage from '/send-message.png'
     padding: 50px;
   }
 }
+@media (max-width: 900px) {
+  .container,
+  .contact {
+    padding: 35px;
+  }
+}
 @media (max-width: 700px) {
   .container,
   .contact {

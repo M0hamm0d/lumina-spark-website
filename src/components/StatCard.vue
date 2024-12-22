@@ -35,8 +35,9 @@ const data = [
 </template>
 <style scoped>
 .metric-card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
   gap: 16px;
   align-items: flex-end;
 }
@@ -84,8 +85,11 @@ const data = [
 }
 @media (max-width: 700px) {
   .metric-card {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
+  /* .metric-card {
+    grid-template-columns: 1fr;
+  } */
   .card1,
   .card2,
   .card3 {

@@ -97,6 +97,11 @@ const metricCard = [
   display: flex;
   margin: 0 auto;
 }
+@media (max-width: 900px) {
+  .social-impact-wrapper {
+    padding: 0 35px 35px;
+  }
+}
 @media (max-width: 700px) {
   .social-impact {
     flex-direction: column;

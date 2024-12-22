@@ -108,6 +108,30 @@ a {
 @media (max-width: 1025px) {
   .header {
     padding: 50px;
+    align-items: center;
+  }
+}
+@media (max-width: 900px) {
+  .changeLife {
+    padding: 12px 18px;
+  }
+  .header-logo img {
+    width: 140px;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    padding: 35px;
+  }
+  .header,
+  .changeLife {
+    font-size: 13px;
+  }
+}
+@media (max-width: 750px) {
+  .header-nav,
+  .nav {
+    display: none;
   }
 }
 @media (max-width: 700px) {
