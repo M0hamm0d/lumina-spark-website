@@ -42,7 +42,9 @@ const cards = [
 <template>
   <div class="initiative-cards">
     <div v-for="(item, index) in cards" :key="index" class="initiative-card">
-      <img :src="item.image" alt="File icon" />
+      <div class="">
+        <img :src="item.image" alt="File icon" />
+      </div>
       <div>
         <div class="head">
           <h3>{{ item.header }}</h3>
@@ -60,6 +62,9 @@ const cards = [
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+.initiative-cards div:first-child img {
+  width: 100%;
 }
 .initiative-card {
   display: flex;

@@ -55,7 +55,9 @@ const cards = [
       :key="index"
       class="ongoing-fundraising-big-card"
     >
-      <img :src="item.src" alt="img" />
+      <div class="">
+        <img :src="item.src" alt="img" />
+      </div>
       <div>
         <div>
           <p class="header">{{ item.header }}</p>
@@ -79,7 +81,9 @@ const cards = [
         :key="index"
         class="ongoing-fundraising-small-card"
       >
-        <img :src="item.src" alt="img" />
+        <div class="">
+          <img :src="item.src" alt="img" />
+        </div>
         <div>
           <div>
             <p class="h4">{{ item.header }}</p>
@@ -112,6 +116,10 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+.ongoing-fundraising-big-card div:first-child img,
+.ongoing-fundraising-small-card div:first-child img {
+  width: 100%;
 }
 .ongoing-fundraising-right-sec {
   display: grid;
