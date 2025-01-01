@@ -47,10 +47,14 @@ import TheCarousel from '@/components/TheCarousel.vue'
               providing vital support, resources, and opportunities.
             </template>
           </MissionAndVision>
-          <img :src="mission" alt="img" />
+          <div class="">
+            <img :src="mission" alt="img" />
+          </div>
         </div>
         <div class="vision-sec">
-          <img :src="vision" alt="img" />
+          <div class="vision-img">
+            <img :src="vision" alt="img" />
+          </div>
           <MissionAndVision logo="/visionLogo.png">
             <template v-slot:header>Vision</template>
             <template v-slot:text>
@@ -59,6 +63,9 @@ import TheCarousel from '@/components/TheCarousel.vue'
               their community’s growth.
             </template>
           </MissionAndVision>
+          <div class="vision-img-mobile">
+            <img :src="vision" alt="img" />
+          </div>
         </div>
       </div>
     </div>
@@ -219,6 +226,27 @@ a {
   display: flex;
   gap: 16px;
 }
+.mission-sec > div:last-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 25px;
+}
+.mission-sec > div:last-child {
+  border-radius: 25px;
+}
+.vision-sec > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 25px;
+}
+.vision-sec > div:first-child {
+  border-radius: 25px;
+}
+.vision-img-mobile {
+  display: none;
+}
 .accordion-container {
   padding: 50px 100px;
   display: flex;
@@ -319,6 +347,22 @@ a {
   font-weight: 500;
   letter-spacing: 0.15px;
 }
+@media (max-width: 900px) {
+  .mission-and-vision,
+  .accordion-container,
+  .founder-speech,
+  .our-team-container,
+  .our-impact-container {
+    padding: 35px;
+  }
+  .accordion-container {
+    gap: 25px;
+  }
+  .acc-right-sec,
+  .acc-left-text {
+    width: 100%;
+  }
+}
 @media (max-width: 700px) {
   .our-impact-container,
   .our-team-container {
@@ -342,17 +386,27 @@ a {
   .vision-sec {
     flex-direction: column;
   }
+  .vision-img {
+    display: none;
+  }
+  .vision-img-mobile {
+    display: flex;
+    width: 100%;
+  }
+  .vision-img-mobile img {
+    width: 100%;
+  }
   .mission-sec > img,
   .vision-sec > img {
     display: none;
   }
+  .mission-and-vision,
   .accordion-container {
-    gap: 15px;
-  }
-  .accordion-container,
-  .mission-and-vision {
     padding: 25px;
     flex-direction: column;
+  }
+  .accordion-container {
+    gap: 15px;
   }
   .founder-speech {
     flex-direction: column;

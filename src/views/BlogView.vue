@@ -68,7 +68,9 @@ const data = [
     </div>
     <div class="header-body">
       <div v-for="(item, index) in data.slice(0, 1)" :key="index" class="left">
-        <img :src="item.img" alt="img" />
+        <div class="">
+          <img :src="item.img" alt="img" />
+        </div>
         <div class="bottom">
           <div class="date-sec">
             <div class="date">
@@ -97,7 +99,9 @@ const data = [
           :key="index"
           class="right1"
         >
-          <img :src="item.img" alt="img" />
+          <div class="">
+            <img :src="item.img" alt="img" />
+          </div>
           <div class="bottom-small">
             <div class="date-sec">
               <div class="date">
@@ -181,6 +185,9 @@ const data = [
   flex-direction: column;
   gap: 16px;
   color: #514440;
+}
+.left > div:first-child img {
+  width: 100%;
 }
 .bottom {
   display: flex;

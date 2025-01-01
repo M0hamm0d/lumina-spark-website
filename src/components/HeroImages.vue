@@ -46,6 +46,11 @@ setInterval(() => {
 .mobile {
   display: none;
 }
+@media (max-width: 900px) {
+  .hero-images {
+    padding: 0 35px;
+  }
+}
 @media (max-width: 700px) {
   .hero-images {
     display: none;
