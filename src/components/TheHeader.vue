@@ -52,7 +52,7 @@ import dropdown from '/dropdown.png'
 </template>
 <style scoped>
 .mobile-nav {
-  display: none;
+  /* display: none; */
 }
 a {
   text-decoration: none;
