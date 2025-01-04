@@ -30,19 +30,6 @@ import dropdown from '/dropdown.png'
         <RouterLink to="/blog" class="nav">Blogs</RouterLink>
       </li>
     </ul>
-    <div class="mobile-nav">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="24px"
-        viewBox="0 -960 960 960"
-        width="24px"
-        fill="#5f6368"
-      >
-        <path
-          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-        />
-      </svg>
-    </div>
     <RouterLink class="nav">
       <a href="#ongoing-fundraising" v-smooth-scroll class="changeLife"
         >Change A Life</a
@@ -51,9 +38,6 @@ import dropdown from '/dropdown.png'
   </header>
 </template>
 <style scoped>
-.mobile-nav {
-  /* display: none; */
-}
 a {
   text-decoration: none;
   display: flex;
