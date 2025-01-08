@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-const isVisible = ref(true)
+import { RouterLink } from 'vue-router'
+const isVisible = ref(false)
 
 const toggleVisibility = () => {
   isVisible.value = !isVisible.value
@@ -34,28 +35,72 @@ const toggleVisibility = () => {
         />
       </svg>
     </div>
-    <p>hello</p>
+    <ul>
+      <li>
+        <RouterLink to="/" class="nav">Home</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/about" class="nav">About</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/program" class="nav">Programs</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/getInvolved" class="nav">Get Involved</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/eLearn" class="nav">E-Learning Portal</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/blog" class="nav">Blogs</RouterLink>
+      </li>
+    </ul>
   </div>
 </template>
 <style scoped>
 .mobile-nav {
-  position: absolute;
-  right: 25px;
-  top: 35px;
-  display: flex;
-  /* display: none; */
-  z-index: 5;
-  color: black;
+  display: none;
 }
 .wrapper {
   position: absolute;
   right: 0;
-  width: 70%;
+  width: 50%;
   display: flex;
-  /* display: none; */
+  flex-direction: column;
+  z-index: 50;
   background-color: white;
-  z-index: 5;
   color: black;
   height: 100vh;
+  border-radius: 15px 0 0 15px;
+  padding: 10px;
+  box-shadow: 0px 1px 1px 2px #0000000d;
+}
+.wrapper ul {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper ul li {
+  list-style: none;
+  padding: 15px;
+}
+.router-link-exact-active {
+  color: #df3800;
+  background-color: #df3800;
+  border-bottom: 1px solid #df3800;
+}
+.nav {
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .mobile-nav {
+    position: absolute;
+    z-index: 10;
+    right: 25px;
+    top: 35px;
+    display: flex;
+    z-index: 5;
+    color: black;
+  }
 }
 </style>
