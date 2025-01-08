@@ -17,5 +17,7 @@ import MobileMenu from './components/MobileMenu.vue'
 <style scoped>
 .container {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 </style>
