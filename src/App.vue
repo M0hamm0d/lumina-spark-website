@@ -25,5 +25,6 @@ provide('isVisible', isVisible)
 }
 .container.isSidebarVisible {
   height: 100vh;
+  /* background: #0d0d0d66; */
 }
 </style>
