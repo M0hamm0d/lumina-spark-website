@@ -1,8 +1,8 @@
 <script setup>
-import { ref } from 'vue'
+import { inject } from 'vue'
 import { RouterLink } from 'vue-router'
-const isVisible = ref(false)
-
+// const isVisible = ref(false)
+const isVisible = inject('isVisible')
 const toggleVisibility = () => {
   isVisible.value = !isVisible.value
 }
@@ -71,8 +71,8 @@ const toggleVisibility = () => {
 }
 .sidebar {
   position: absolute;
-  right: -50%;
-  width: 50%;
+  right: -250px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   z-index: 50;
@@ -86,13 +86,13 @@ const toggleVisibility = () => {
   overflow: hidden;
 }
 .sidebar.sidebar-open {
-  right: 0;
+  right: 0px;
 }
 .sidebar > div {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px 10px 10px;
+  padding: 25px 15px 15px 10px;
 }
 .sidebar ul {
   display: flex;
