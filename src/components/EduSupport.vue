@@ -3,6 +3,7 @@
   <div class="topSection">
     <div class="topHeaders">Educational Support</div>
     <div class="topBody">
+      <img class="mobile-view" src="/education1.png" alt="img" />
       <div class="bodyRight">
         <p>
           Education is the cornerstone of a brighter future. Educational Support
@@ -59,7 +60,7 @@
           </p>
         </div>
       </div>
-      <img src="/education1.png" alt="img" />
+      <img class="desktop-view" src="/education1.png" alt="img" />
     </div>
   </div>
   <div class="bottomSec">
@@ -70,6 +71,12 @@
   </div>
 </template>
 <style scoped>
+.desktop-view {
+  display: flex;
+}
+.mobile-view {
+  display: none;
+}
 .topSection {
   display: flex;
   flex-direction: column;
@@ -149,6 +156,12 @@
   width: 100%;
 }
 @media (max-width: 700px) {
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: flex;
+  }
   .topHeaders {
     width: 100%;
   }

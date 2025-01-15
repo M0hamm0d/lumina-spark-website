@@ -95,7 +95,9 @@ const cards = [
                 <h4>{{ item.raisedAmount }}</h4>
                 <p>{{ item.raisedTotal }}</p>
               </div>
-              <img :src="item.indicatorSrc" alt="img" />
+              <div class="">
+                <img :src="item.indicatorSrc" alt="img" />
+              </div>
             </div>
             <RouterLink class="button">Donate</RouterLink>
           </div>
@@ -164,17 +166,24 @@ a {
 .cta,
 .cta-small {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  flex: 1;
 }
 .cta > div {
   display: flex;
   flex-direction: column;
   gap: 17px;
+  width: 100%;
 }
 .cta-small > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
+}
+.cta-small img {
+  width: 100%;
+  height: 5.74px;
 }
 .amount-raised {
   display: flex;
