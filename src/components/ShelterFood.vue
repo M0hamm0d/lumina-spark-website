@@ -3,6 +3,7 @@
   <div class="topSection">
     <div class="topHeaders">Shelter and Food</div>
     <div class="topBody">
+      <img class="mobile-view" src="/shelter1.png" alt="img" />
       <div class="bodyRight">
         <p>
           No one should have to worry about where their next meal will come from
@@ -55,7 +56,7 @@
           <p>Provided shelter and meals to over 5,000 homeless individuals</p>
         </div>
       </div>
-      <img src="/shelter1.png" alt="img" />
+      <img class="desktop-view" src="/shelter1.png" alt="img" />
     </div>
   </div>
   <div class="bottomSec">
@@ -66,6 +67,12 @@
   </div>
 </template>
 <style scoped>
+.desktop-view {
+  display: flex;
+}
+.mobile-view {
+  display: none;
+}
 .topSection {
   display: flex;
   flex-direction: column;
@@ -145,6 +152,12 @@
   width: 100%;
 }
 @media (max-width: 700px) {
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: flex;
+  }
   .topHeaders {
     width: 100%;
   }
