@@ -68,7 +68,7 @@ const data = [
     </div>
     <div class="header-body">
       <div v-for="(item, index) in data.slice(0, 1)" :key="index" class="left">
-        <div class="">
+        <div class="thumbnail">
           <img :src="item.img" alt="img" />
         </div>
         <div class="bottom">
@@ -99,7 +99,7 @@ const data = [
           :key="index"
           class="right1"
         >
-          <div class="">
+          <div class="thumbnail">
             <img :src="item.img" alt="img" />
           </div>
           <div class="bottom-small">
@@ -129,7 +129,9 @@ const data = [
   <div class="container">
     <h2>Recent Post</h2>
     <div v-for="(item, index) in data.slice(3)" :key="index" class="right1">
-      <img :src="item.img" alt="img" />
+      <div class="recent-post-thumbnail">
+        <img :src="item.img" alt="img" />
+      </div>
       <div class="bottom-small">
         <div class="date-sec">
           <div class="date">
@@ -155,6 +157,16 @@ const data = [
   </div>
 </template>
 <style scoped>
+.thumbnail,
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  /* object-fit: cover;
+  object-position: center; */
+}
+.recent-post-thumbnail {
+  width: 100%;
+}
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -235,9 +247,9 @@ const data = [
   flex-direction: column;
   gap: 28px;
 }
-.container .bottom-body-small {
+/* .container .bottom-body-small {
   gap: 48px;
-}
+} */
 .body-top {
   display: flex;
   flex-direction: column;
@@ -293,6 +305,12 @@ const data = [
 .right1 {
   display: flex;
   gap: 16px;
+}
+.right1 > :first-child {
+  width: 100%;
+}
+.right1 > :first-child img {
+  width: 100%;
 }
 .container {
   padding: 50px 100px;
