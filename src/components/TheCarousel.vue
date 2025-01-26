@@ -174,6 +174,10 @@ import { ref } from 'vue'
 .details p {
   letter-spacing: 0.5%;
 }
+.details > img {
+  width: 60px;
+  height: 60px;
+}
 .active {
   background-color: #514440;
   width: 24px;
@@ -204,6 +208,11 @@ import { ref } from 'vue'
     left: 50%;
     /* top: 0; */
     transform: translate(-50%, 70%);
+  }
+}
+@media (max-width: 500px) {
+  .testimony {
+    height: 250px;
   }
 }
 </style>

@@ -27,7 +27,8 @@ const data = [
     body: 'Take Aisha, for example. After participating in our vocational training and receiving a micro-loan, she launched a tailoring business in her community in Kenya.',
   },
   {
-    img: '/shelter2.png',
+    // img: '/shelter2.png',
+    img: '/recent-post.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Shelter and Food',
@@ -35,7 +36,8 @@ const data = [
     body: 'One success story is Emmanuel, who, after losing his home, found refuge in our shelter. With the support of our programs, he secured employment and moved into his own apartment within six months.',
   },
   {
-    img: '/solar2.png',
+    // img: '/solar2.png',
+    img: '/recent-post.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Water and Solar Energy',
@@ -43,7 +45,8 @@ const data = [
     body: 'In rural Tanzania, we recently completed a project that brought clean drinking water to a village of 3,000 people. Prior to this, residents had to walk miles to access water, which was often contaminated.',
   },
   {
-    img: '/education3.png',
+    // img: '/education3.png',
+    img: '/recent-post.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Education',
@@ -51,7 +54,8 @@ const data = [
     body: 'Tone inspiring story is that of Mary, a young girl from Uganda. With the support of our scholarship program, she was able to complete her secondary education and is now pursuing a degree in engineering.',
   },
   {
-    img: '/education5.png',
+    // img: '/education5.png',
+    img: '/recent-post.png',
     date: 'May 25, 2024',
     timeRead: '5 mins read',
     summary: 'Education',
@@ -160,7 +164,7 @@ const data = [
 .thumbnail,
 .thumbnail img {
   width: 100%;
-  height: auto;
+  height: 100%;
   /* object-fit: cover;
   object-position: center; */
 }
@@ -176,6 +180,9 @@ const data = [
 .header {
   padding-left: 100px;
 }
+/* .hero-container {
+  padding: 50px;
+} */
 .header h1 {
   font-size: 28px;
   line-height: 36px;
@@ -212,7 +219,7 @@ const data = [
   gap: 12px;
 }
 .container .bottom-small {
-  gap: 20px;
+  gap: 15px;
 }
 .date-sec {
   display: flex;
@@ -245,7 +252,7 @@ const data = [
 .bottom-body-small {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 20px;
 }
 /* .container .bottom-body-small {
   gap: 48px;
@@ -304,10 +311,12 @@ const data = [
 }
 .right1 {
   display: flex;
+  height: 100%;
   gap: 16px;
 }
 .right1 > :first-child {
   width: 100%;
+  height: auto;
 }
 .right1 > :first-child img {
   width: 100%;

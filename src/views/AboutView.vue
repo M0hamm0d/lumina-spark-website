@@ -107,7 +107,9 @@ import TheCarousel from '@/components/TheCarousel.vue'
         </div>
       </div>
     </div>
-    <img :src="founder" alt="img" />
+    <div class="founder-img">
+      <img :src="founder" alt="img" />
+    </div>
   </div>
   <div class="our-team-container">
     <div class="top-section">
@@ -138,6 +140,9 @@ import TheCarousel from '@/components/TheCarousel.vue'
   <GetInvolved />
 </template>
 <style scoped>
+.founder-img img {
+  width: 100%;
+}
 .accordion {
   display: flex;
   flex-direction: column;
@@ -234,6 +239,8 @@ a {
 }
 .mission-sec > div:last-child {
   border-radius: 25px;
+  display: flex;
+  flex: 1;
 }
 .vision-sec > div:first-child img {
   width: 100%;
@@ -243,6 +250,8 @@ a {
 }
 .vision-sec > div:first-child {
   border-radius: 25px;
+  display: flex;
+  flex: 1;
 }
 .vision-img-mobile {
   display: none;
@@ -250,6 +259,7 @@ a {
 .accordion-container {
   padding: 50px 100px;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   background-color: #fffbf8;
 }
