@@ -3,7 +3,9 @@
   <div class="topSection">
     <div class="topHeader">Women Empowerment</div>
     <div class="topBody">
-      <img src="/women-1.png" alt="img" />
+      <div class="">
+        <img src="/women-1.png" alt="img" class="women1" />
+      </div>
       <div class="bodyRight">
         <p>
           We believe that empowering women is key to fostering sustainable
@@ -70,6 +72,9 @@
   </div>
 </template>
 <style scoped>
+.women1 {
+  width: 100%;
+}
 .topSection {
   display: flex;
   flex-direction: column;

@@ -109,6 +109,7 @@ const cards = [
 <style scoped>
 a {
   text-decoration: none;
+  height: min-content;
 }
 .ongoing-fundraising-bottom {
   display: flex;
@@ -168,6 +169,7 @@ a {
   display: flex;
   width: 100%;
   flex: 1;
+  align-items: center;
 }
 .cta > div {
   display: flex;

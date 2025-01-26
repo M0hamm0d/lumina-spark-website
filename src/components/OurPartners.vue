@@ -8,17 +8,18 @@ const partners = [
 ]
 </script>
 <template>
-  <div class="container">
+  <div class="our-partners">
     <div v-for="(item, index) in partners" :key="index" class="partners">
       <img :src="item.partners" alt="project partners" />
     </div>
   </div>
 </template>
 <style scoped>
-.container {
+.our-partners {
   max-width: 886.25px;
   margin: 0 auto;
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 .partners img {
@@ -29,13 +30,13 @@ const partners = [
   transition: 0.5s;
 }
 @media (max-width: 700px) {
-  .container {
+  .our-partners {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 15px;
   }
-  .container img {
+  .our-partners img {
     width: 80%;
   }
 }

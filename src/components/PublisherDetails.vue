@@ -1,6 +1,8 @@
 <template>
   <div class="body-bottom">
-    <img src="/blogProfile.png" alt="img" />
+    <div class="publisher-img">
+      <img src="/blogProfile.png" alt="img" />
+    </div>
     <div>
       <h5>Muhammad Adeyemi</h5>
       <p>Founder/CEO</p>
@@ -28,5 +30,9 @@
   letter-spacing: 0.5px;
   line-height: 0.5px;
   color: #514440;
+}
+.publisher-img {
+  width: 40px;
+  height: 40px;
 }
 </style>
