@@ -129,6 +129,9 @@ const card = [
   gap: 8px;
   align-items: center;
 }
+.profile-card > img {
+  width: 100px;
+}
 .card-name {
   letter-spacing: 0.15%;
   line-height: 24px;

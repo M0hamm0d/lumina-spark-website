@@ -16,8 +16,10 @@ defineProps(['href', 'body'])
   color: #b66100;
   width: fit-content;
   display: flex;
+  text-wrap: nowrap;
   align-items: end;
   text-decoration: none;
+  height: fit-content;
 }
 @media (max-width: 700px) {
   .button {

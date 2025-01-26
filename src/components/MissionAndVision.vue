@@ -19,7 +19,7 @@ defineProps(['logo'])
   flex-direction: column;
   border-radius: 24px;
   padding: 24px;
-  flex: 1;
+  flex: 1.2;
   gap: 16px;
 }
 .mission-title {

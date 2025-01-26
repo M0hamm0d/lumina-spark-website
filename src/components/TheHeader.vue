@@ -1,7 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import logo from '/lumina-logo.png'
-import dropdown from '/dropdown.png'
 </script>
 <template>
   <header class="header">
@@ -15,10 +14,7 @@ import dropdown from '/dropdown.png'
         <RouterLink to="/about" class="nav">About</RouterLink>
       </li>
       <li class="navigation">
-        <RouterLink to="/program" class="nav">
-          Programs
-          <img :src="dropdown" alt="file icon" />
-        </RouterLink>
+        <RouterLink to="/program" class="nav"> Programs </RouterLink>
       </li>
       <li class="navigation">
         <RouterLink to="/getInvolved" class="nav">Get Involved</RouterLink>
