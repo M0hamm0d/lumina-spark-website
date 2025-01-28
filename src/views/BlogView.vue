@@ -165,8 +165,6 @@ const data = [
 .thumbnail img {
   width: 100%;
   height: 100%;
-  /* object-fit: cover;
-  object-position: center; */
 }
 .recent-post-thumbnail {
   width: 100%;
@@ -180,9 +178,6 @@ const data = [
 .header {
   padding-left: 100px;
 }
-/* .hero-container {
-  padding: 50px;
-} */
 .header h1 {
   font-size: 28px;
   line-height: 36px;
@@ -315,11 +310,14 @@ const data = [
   gap: 16px;
 }
 .right1 > :first-child {
-  width: 100%;
   height: auto;
 }
 .right1 > :first-child img {
   width: 100%;
+  object-fit: cover;
+}
+.right1 > .recent-post-thumbnail {
+  /* height: 208px; */
 }
 .container {
   padding: 50px 100px;

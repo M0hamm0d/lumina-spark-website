@@ -29,12 +29,12 @@ const metricCard = [
 ]
 </script>
 <template>
-  <div class="social-impact-wrapper">
+  <div class="social-impact-and-partner-section">
     <div class="social-impact">
       <div
         v-for="(item, index) in metricCard"
         :key="index"
-        class="si-metric-card"
+        class="social-impact-metric-card"
       >
         <img :src="item.image" alt="File icon" />
         <div>
@@ -50,7 +50,7 @@ const metricCard = [
   </div>
 </template>
 <style scoped>
-.social-impact-wrapper {
+.social-impact-and-partner-section {
   padding: 50px 100px;
   display: flex;
   flex-direction: column;
@@ -63,23 +63,23 @@ const metricCard = [
   display: flex;
   justify-content: space-between;
 }
-.si-metric-card {
+.social-impact-metric-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   width: 206px;
 }
-.si-metric-card:not(:last-child) {
+.social-impact-metric-card:not(:last-child) {
   border-right: 1.5px solid #ffd4ba;
 }
-.si-metric-card > div {
+.social-impact-metric-card > div {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
 }
-.si-metric-card > div h1 {
+.social-impact-metric-card > div h1 {
   text-align: center;
 }
 .partners-section {
@@ -98,7 +98,7 @@ const metricCard = [
   margin: 0 auto;
 }
 @media (max-width: 900px) {
-  .social-impact-wrapper {
+  .social-impact-and-partner-section {
     padding: 0 35px 35px;
   }
 }
@@ -107,10 +107,10 @@ const metricCard = [
     flex-direction: column;
     align-items: center;
   }
-  .social-impact-wrapper {
+  .social-impact-and-partner-section {
     padding: 25px;
   }
-  .si-metric-card:not(:last-child) {
+  .social-impact-metric-card:not(:last-child) {
     border-right: none;
   }
 }

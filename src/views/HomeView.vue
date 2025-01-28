@@ -11,8 +11,8 @@ import CoreValues from '@/components/CoreValues.vue'
 
 <template>
   <div class="hero-section">
-    <div class="hero">
-      <div class="hero-container">
+    <div class="">
+      <div class="hero-text">
         <div class="new-features">
           <p class="new-feature-text">New Feature</p>
           <p>Check out the e-learning platform →</p>
@@ -26,7 +26,7 @@ import CoreValues from '@/components/CoreValues.vue'
           the cycle of poverty and cultivate thriving communities across Africa.
         </p>
       </div>
-      <div class="buttons">
+      <div class="hero-section-button">
         <button class="get-involved">Get Involved</button>
         <a href="#our-initiatives" v-smooth-scroll class="nav">
           <button class="learn-more">Learn More</button>
@@ -116,14 +116,14 @@ a {
   gap: 24px;
   background-color: #fffbf8;
 }
-.hero {
+.hero-section > div {
   display: flex;
   flex-direction: column;
   gap: 24px;
   max-width: 930px;
   margin: 0 auto;
 }
-.hero-container {
+.hero-text {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -158,10 +158,10 @@ a {
 .hero-title span {
   color: #df3800;
 }
-.hero-container p {
+.hero-text p {
   text-align: center;
 }
-.buttons {
+.hero-section-button {
   margin: 0 auto;
   display: flex;
   gap: 24px;
@@ -231,6 +231,7 @@ a {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
 }
 .image-container div:first-child {
   width: 100%;
@@ -260,7 +261,7 @@ a {
   width: 100%;
 }
 @media (max-width: 900px) {
-  .hero,
+  .hero-section > div,
   .our-initiative,
   .ongoing-camp-container {
     padding: 35px;
@@ -277,7 +278,7 @@ a {
   }
 }
 @media (max-width: 750px) {
-  .hero-container {
+  .hero-text {
     padding: 25px;
   }
   .new-features {
@@ -304,7 +305,7 @@ a {
   }
 }
 @media (max-width: 500px) {
-  .hero-container {
+  .hero-text {
     padding: 0;
   }
 }
