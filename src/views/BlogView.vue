@@ -166,9 +166,6 @@ const data = [
   width: 100%;
   height: 100%;
 }
-.recent-post-thumbnail {
-  width: 100%;
-}
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -249,9 +246,6 @@ const data = [
   flex-direction: column;
   gap: 20px;
 }
-/* .container .bottom-body-small {
-  gap: 48px;
-} */
 .body-top {
   display: flex;
   flex-direction: column;
@@ -309,15 +303,9 @@ const data = [
   height: 100%;
   gap: 16px;
 }
-.right1 > :first-child {
-  height: auto;
-}
 .right1 > :first-child img {
-  width: 100%;
-  object-fit: cover;
-}
-.right1 > .recent-post-thumbnail {
-  /* height: 208px; */
+  object-fit: contain;
+  height: 196px;
 }
 .container {
   padding: 50px 100px;
